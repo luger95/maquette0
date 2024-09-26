@@ -1,0 +1,57 @@
+#competences {
+    display: grid;
+    grid-template-columns: 5rem auto;
+    grid-template-areas: ". h3" "buttons slider";
+    margin: 1rem;
+}
+
+#competences h3 {
+    grid-area: h3;
+}
+
+.competences_slider_arrow{
+    display: none;
+}
+
+#competences_interactible {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-area: buttons;
+}
+
+#competences_interactible_arrows {
+    background-color: blue;
+    padding: 0.7rem 0.5rem;
+    width: min-content;
+    height: min-content;
+    display: flex;
+    z-index: 1;
+}
+
+#competences button {
+    border: none;
+    background-color: transparent;
+    color: white;
+    margin: auto 0.3rem;
+    padding: 0;
+    font-size: 0.7em;
+}
+
+#competences_slider {
+    grid-area: slider;
+    display: flex;
+    flex-flow: row nowrap;
+}
+
+#competences_slider div {
+    width: fit-content;
+    height: fit-content;
+    font-family: ZonaProBold;
+    color: white;
+}
+
+#competences_slider p {
+    font-size: 0.7em;
+    font-family: Arial;
+    color: blue;
+}
