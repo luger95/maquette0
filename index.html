@@ -8,6 +8,7 @@
     <link rel="stylesheet" href="">
     <link rel="stylesheet" href="assets/css/reset.css">
     <meta name="description" content="">
+    <script src="assets/js/global.js"></script>
 </head>
 
 <body>
@@ -108,20 +109,23 @@
         <!-- ------------------------------------------------------>
         <!-- ----------------- Slider missions -------------------->
         <!-- ------------------------------------------------------>
+        
         <div id="mission">
             
             <img id="img-missions" src="" alt="">
 
             <h4>MISSIONS LES PLUS COURANTES</h4>
             <div>
-                <img src="" alt="">
-                <p></p>
+                
+                <img id="img-left" src="assets/img/fleche-gauche.png" alt="Flèche Gauche" onclick="decrementCounter()">
+                <p id="counter">1</p> 
                 <p>/04</p>
-                <img src="" alt="">
+                <img id="img-right" src="assets/img/fleche-droite.png" alt="Flèche Droite" onclick="incrementCounter()">
             </div>
+
             <hr>
             
-            <div>
+            <div id="mission-recrutement">
                 <h5>RECRUTEMENT</h5>
                 <ul>
                     <li>
@@ -139,7 +143,7 @@
                 </ul>
             </div>
 
-            <div>
+            <div id="mission-interim">
                 <h5>INTERIM</h5>
                 <ul>
                     <li>
@@ -157,7 +161,7 @@
                 </ul>
             </div>
 
-            <div>
+            <div id="mission-performance">
                 <h5>PERFORMANCE</h5>
                 <ul>
                     <li>
@@ -175,7 +179,7 @@
                 </ul>
             </div>
 
-            <div>
+            <div id="transformation">
                 <h5>TRANSFORMATION</h5>
                 <ul>
                     <li>
