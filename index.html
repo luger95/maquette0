@@ -36,12 +36,13 @@
         - si nécessaire, placer le JS dans le fichier global.js
 -->
 
-
+ 
 
 <!-- ------------------------------------------------------>
 <!-- ------------------ HEADER ---------------------------->
 <!-- ------------------------------------------------------>
 <header>
+
     <div class="barNav">
         <p>LOGO</p>
         <ul>
@@ -52,12 +53,17 @@
             <li>A Propos</li>
             <li>Ressouces</li>
         </ul>
-        <img src="assets/img/Icon ionic-ios-search.svg" alt="">
+        <div class="searchContainer">
+            <form id="searchForm">
+                <input type="text" id="searchBar" placeholder="Tapez ici..." />
+            </form>
+            <img id="searchIcon" src="assets/img/Icon ionic-ios-search.svg" alt="">
+        </div>
     </div>
 
-
-
 </header>
+
+<script src="assets/js/header.js"></script>
 <!-- ------------------------------------------------------>
 <!-- ------------------ END HEADER ------------------------>
 <!-- ------------------------------------------------------>
