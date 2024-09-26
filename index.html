@@ -7,6 +7,7 @@
     <link rel="stylesheet" href="">
     <link rel="stylesheet" href="assets/css/reset.css">
     <meta name="description" content="">
+    <link rel="stylesheet" href="assets/css/header.css">
 </head>
 <body>
 <!--
@@ -35,29 +36,34 @@
         - si nécessaire, placer le JS dans le fichier global.js
 -->
 
-
+ 
 
 <!-- ------------------------------------------------------>
 <!-- ------------------ HEADER ---------------------------->
 <!-- ------------------------------------------------------>
 <header>
-    <div>
-        <p>Le logo</p>
-        <nav>
-            <a href="">Item 1</a>
-            <a href="">Item 2</a>
-        </nav>
-        <div>
-            <p>Rechercher</p>
+
+    <div class="barNav">
+        <p>LOGO</p>
+        <ul>
+            <li>Recrutement</li>
+            <li>Interim</li>
+            <li>Performance</li>
+            <li>Transformation</li>
+            <li>A Propos</li>
+            <li>Ressouces</li>
+        </ul>
+        <div class="searchContainer">
+            <form id="searchForm">
+                <input type="text" id="searchBar" placeholder="Tapez ici..." />
+            </form>
+            <img id="searchIcon" src="assets/img/Icon ionic-ios-search.svg" alt="">
         </div>
     </div>
-    <div>
-        <nav>
-            <a href="">Espace canditat</a>
-            <a href="">Aide & contact</a>
-        </nav>
-    </div>
+
 </header>
+
+<script src="assets/js/header.js"></script>
 <!-- ------------------------------------------------------>
 <!-- ------------------ END HEADER ------------------------>
 <!-- ------------------------------------------------------>
