@@ -1,0 +1,174 @@
+@font-face {
+    font-family: 'FrontageCondensedOutline';
+    src: url('../fonts/frontage-condensed-outline/FrontageCondensedOutline.eot');
+    src: url('../fonts/frontage-condensed-outline/FrontageCondensedOutline.eot') format('embedded-opentype'),
+    url('../fonts/frontage-condensed-outline/FrontageCondensedOutline.woff2') format('woff2'),
+    url('../fonts/frontage-condensed-outline/FrontageCondensedOutline.woff') format('woff'),
+    url('../fonts/frontage-condensed-outline/FrontageCondensedOutline.ttf') format('truetype'),
+    url('../fonts/frontage-condensed-outline/FrontageCondensedOutline.svg#FrontageCondensedOutline') format('svg');
+}
+@font-face {
+    font-family: 'ZonaProBold';
+    src: url('../fonts/zona-pro/ZonaProBold.eot');
+    src: url('../fonts/zona-pro/ZonaProBold.eot') format('embedded-opentype'),
+    url('../fonts/zona-pro/ZonaProBold.woff2') format('woff2'),
+    url('../fonts/zona-pro/ZonaProBold.woff') format('woff'),
+    url('../fonts/zona-pro/ZonaProBold.ttf') format('truetype'),
+    url('../fonts/zona-pro/ZonaProBold.svg#ZonaProBold') format('svg');
+}
+@font-face {
+    font-family: 'ZonaProExtraLight';
+    src: url('../fonts/zona-pro/ZonaProExtraLight.eot');
+    src: url('../fonts/zona-pro/ZonaProExtraLight.eot') format('embedded-opentype'),
+    url('../fonts/zona-pro/ZonaProExtraLight.woff2') format('woff2'),
+    url('../fonts/zona-pro/ZonaProExtraLight.woff') format('woff'),
+    url('../fonts/zona-pro/ZonaProExtraLight.ttf') format('truetype'),
+    url('../fonts/zona-pro/ZonaProExtraLight.svg#ZonaProExtraLight') format('svg');
+}
+
+
+:root {
+    --primary-color: rgba(15, 47, 120, 1);
+    --seconday-color: rgba(54, 160, 172, 1);
+    --black-color: rgba(0, 0, 0, 1);
+    --green-color: rgba(0, 90, 61, 1);
+    --grey-color: rgba(112, 112, 112, 1);
+    --grey-dark-color: rgba(90, 90, 90, 1);
+    --grey-light-color: rgba(242, 244, 247, 1);
+    --red-color: rgba(179, 67, 62, 1);
+    --blue-color: rgba(162, 182, 223, 1)
+}
+
+body {
+    font-size: 16px;
+}
+
+
+h2 {
+    font-size: 2.5em;
+    font-family: 'ZonaProBold';
+}
+
+.uppercase {
+    text-transform: uppercase;
+}
+
+.text-center {
+    text-align: center;
+}
+
+.container {
+    max-width: 1246px;
+}
+
+.grodiv ul li h3{
+    font-family: 'ZonaProBold';
+    text-transform: uppercase;
+    color: rgba(15, 47, 120, 1);
+    font-size: 0.8rem;
+    font-weight: bold;
+}
+
+.grodiv ul li{
+    border: solid 4px rgba(15, 47, 120, 0.4);
+    width: fit-content;
+    margin: 5px;
+    list-style-type: none;
+    padding: 30px 60px;
+}
+
+.grodiv ul li:hover{
+    border: solid 4px rgba(15, 47, 120, 1);
+}
+
+.grodiv ul li img{
+    width: 50px;
+    margin: 10px;
+
+}
+
+.grodiv ul li p{
+    font-size: 0.5rem;
+    font-weight: bold;
+    font-family: 'ZonaProExtraLight';
+    color: rgba(15, 47, 120, 1);
+}
+
+
+.grodiv ul{
+    text-align: center;
+    display: flex;
+    flex-direction: row;
+    overflow: hidden;
+}
+
+.tregrodiv {
+    margin-left: 10%;
+}
+
+.tregrodiv p {
+    font-family: 'ZonaProExtraLight';
+    font-weight: bold;
+    font-size: 0.8rem;
+
+}
+
+.tregrodiv h2{
+    font-family: 'ZonaProBold';
+    font-size: 2rem;
+    color: rgba(15, 47, 120, 1);
+}
+
+.boutons button{
+    background-color: rgba(15, 47, 120, 1);
+    padding: 10px;
+    margin: 0;
+    border: none;
+}
+
+.titefleche{
+    rotate: 180deg;
+}
+
+.boutons p{
+    color: rgba(15, 47, 120, 1);
+    font-weight: 2000;
+    margin: 20px;
+    font-size: 0.8rem;
+}
+
+.boutons{
+    display: flex;
+    flex-direction: row;
+    position: absolute;
+    float: left;
+}
+
+/* -----------------------------------------------------*/
+/* ------------------ HEADER ---------------------------*/
+/* -----------------------------------------------------*/
+
+/* -----------------------------------------------------*/
+/* ---------------- END HEADER -------------------------*/
+/* -----------------------------------------------------*/
+
+
+
+/* -----------------------------------------------------*/
+/* ----------------- Actualités ------------------------*/
+/* -----------------------------------------------------*/
+
+/* -----------------------------------------------------*/
+/* --------------- END Actualités ----------------------*/
+/* -----------------------------------------------------*/
+
+
+
+/* -----------------------------------------------------*/
+/* ------------------ HEADER ---------------------------*/
+/* -----------------------------------------------------*/
+
+/* -----------------------------------------------------*/
+/* ---------------- END HEADER -------------------------*/
+/* -----------------------------------------------------*/
+
