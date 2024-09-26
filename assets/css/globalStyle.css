@@ -74,8 +74,40 @@ h2 {
 /* -----------------------------------------------------*/
 /* ----------------- Actualités ------------------------*/
 /* -----------------------------------------------------*/
-h2.title {
+#actualite {
+    padding: 100px;
+}
+
+#title {
     color: #0F2F78;
+    font: normal normal normal 30px/63px FrontageCondensed-Bold;
+    text-transform: uppercase;
+}
+
+#right-part {
+    padding-right: 50px;
+    text-align: left;
+    float: right;
+}
+
+#date {
+    font: normal normal normal 16px/36px ZonaPro;
+}
+
+#actu1, #actu2, #actu3 {
+    font: normal normal normal 24px/30px ZonaPro-SemiBold;
+}
+
+#maj:hover {
+    background-color: lightskyblue;
+    opacity: 1;
+}
+
+#imgLeft {
+    top: 5708px;
+    left: 63px;
+    width: 294px;
+    height: 318px;
 }
 /* -----------------------------------------------------*/
 /* --------------- END Actualités ----------------------*/
