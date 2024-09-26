@@ -61,6 +61,50 @@ h2 {
     max-width: 1246px;
 }
 
+
+
+#publications{
+    border: 1px solid black;
+    display: flex;
+    #titreNosP{
+        font-family: 'FrontageCondensedOutline';
+        color: rgba(162, 182, 223, 1); 
+    }
+    .titreImage{
+        font-family: 'FrontageCondensedOutline';
+        color: white;
+        text-align: top;
+        position: absolute;
+        padding-left: 35px;
+    }
+    .txtImage{
+        font-family: 'ZonaProBold';
+        color: white;
+        position: absolute;
+        text-align: bottom;
+        margin-top: 300px;
+        padding-left: 35px;
+    }
+    .arrow{
+        margin-left: 400px;
+    }
+    .Image{
+        width: 500px;
+        height: 400px;
+        overflow: hidden;
+    }
+    .PNG{
+        width: 500px;
+        height: 400px;
+        border-radius: 2%;
+    }
+    .PNG:hover{
+        width: 600px;
+        height: 500px;
+    }
+    
+}
+
 /* -----------------------------------------------------*/
 /* ------------------ HEADER ---------------------------*/
 /* -----------------------------------------------------*/
