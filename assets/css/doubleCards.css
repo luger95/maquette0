@@ -1,0 +1,55 @@
+.images{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+}
+img{
+    width: 700px;
+    height: 700px;
+}
+
+.image1{
+    display: inline-block;
+    position: relative;
+}
+
+.image1 .texte1 {
+    z-index: 1;
+    position: absolute;
+    text-align: center;
+    font-family: Georgia;
+    font-weight: bold;
+    margin: auto;
+    left: 0;
+    bottom: 20%;
+    right: 0;
+    color: white;
+    width: 70%;
+}
+
+.image2{
+    display: inline-block;
+    position: relative;
+}
+
+.image2 .texte2 {
+    z-index: 1;
+    position: absolute;
+    text-align: center;
+    font-family: Georgia;
+    font-weight: bold;
+    margin: auto;
+    left: 0;
+    bottom: 20%;
+    right: 0;
+    color: white;
+    width: 70%;
+}
+
+h2{
+    text-align: center;
+    font-weight: bold;
+    color: rgba(15, 47, 120, 1);
+    font-size: 2.5em;
+    font-family: 'ZonaProBold';
+}
