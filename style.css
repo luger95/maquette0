@@ -1,0 +1,26 @@
+img.slider1 {
+    display: none;
+    width: 1920px;
+    height: 1080px;
+
+
+}
+#image1{
+    display: inline-block;
+}
+#home-slider{
+    position: relative;
+}
+
+#titre{
+    top: 50%;
+    left: 0;
+}
+
+.txtimg{
+    position: absolute;
+}
+#nav{   
+    bottom: 0;
+    left: 0;
+}
