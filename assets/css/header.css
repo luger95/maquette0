@@ -1,0 +1,70 @@
+@font-face {
+    font-family: 'ZonaProBold';
+    src: url('../fonts/zona-pro/ZonaProBold.eot');
+    src: url('../fonts/zona-pro/ZonaProBold.eot') format('embedded-opentype'),
+    url('../fonts/zona-pro/ZonaProBold.woff2') format('woff2'),
+    url('../fonts/zona-pro/ZonaProBold.woff') format('woff'),
+    url('../fonts/zona-pro/ZonaProBold.ttf') format('truetype'),
+    url('../fonts/zona-pro/ZonaProBold.svg#ZonaProBold') format('svg');
+}
+
+@font-face {
+    font-family: 'ZonaProExtraLight';
+    src: url('../fonts/zona-pro/ZonaProExtraLight.eot');
+    src: url('../fonts/zona-pro/ZonaProExtraLight.eot') format('embedded-opentype'),
+    url('../fonts/zona-pro/ZonaProExtraLight.woff2') format('woff2'),
+    url('../fonts/zona-pro/ZonaProExtraLight.woff') format('woff'),
+    url('../fonts/zona-pro/ZonaProExtraLight.ttf') format('truetype'),
+    url('../fonts/zona-pro/ZonaProExtraLight.svg#ZonaProExtraLight') format('svg');
+}
+
+body {
+    background-color: rgba(54, 160, 172, 1);
+    margin: 0; /* Assure que le body n'a pas de marge par défaut */
+}
+
+.barNav { 
+    background-color: rgb(0, 0, 0,0.1);
+    display: flex;
+    flex-direction: row;
+    align-items: center; /* Aligne tous les enfants verticalement au centre */
+    height: 100px; /* Définit une hauteur fixe pour la barre de navigation */
+    width: 100%;
+}
+
+.barNav p {
+    color: rgba(242, 244, 247, 1);
+    font-size: 50px;
+    margin: 0 0 0 50px;
+    display: flex;
+    font-family: 'ZonaProBold';
+
+}
+
+.barNav ul {
+    display: flex;
+    flex-direction: row;
+    margin: 0 auto 0 auto;
+    gap: 30px;
+    padding: 0%;
+    height: 100%; /* Remplir toute la hauteur de la barre de navigation */
+    align-items: center; /* Assure que les éléments enfants sont centrés verticalement */
+}
+
+.barNav ul li {
+    list-style: none;
+    color: rgba(242, 244, 247, 1);
+    display: flex;
+    align-items: center; 
+    font-family: 'ZonaProExtraLight';
+    text-transform: uppercase;
+    font-weight: bold;
+    height: 100%; 
+    cursor: pointer;
+
+}
+
+.barNav ul img {
+
+    padding-right: 50px;
+}
