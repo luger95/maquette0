@@ -89,3 +89,67 @@ h2 {
 /* ---------------- END HEADER -------------------------*/
 /* -----------------------------------------------------*/
 
+
+
+
+
+
+
+
+
+
+/* -----------------------------------------------------*/
+/* ------------------ MISSIONS ---------------------------*/
+/* -----------------------------------------------------*/
+
+#mission {
+    display: flex;
+    justify-content: space-between; 
+    align-items: flex-start;
+  }
+  
+  #bloc-gauche {
+    flex: 1; 
+    margin-right: 20px; 
+  }
+  
+  #bloc-droit {
+    flex: 2; 
+  }
+
+  #img-mission {
+    width: 200px;
+    height: auto; 
+    max-width: 100%; 
+}
+
+.titre-mission{
+    color: #A2B6DF;
+
+}
+
+.hr-mission{
+    border: 4px solid #A2B6DF;
+    
+}
+
+ul {
+    list-style-type: '-'; /* Ajoute des tirets comme puces de liste */
+    padding-left: 0; /* Supprime les marges par défaut des listes */
+    margin-bottom: 0; /* Réduit l'espace sous la liste */
+}
+
+ul li {
+    margin-bottom: 5px; /* Réduit l'espace entre les éléments de la liste */
+}
+
+ul li p {
+    display: inline; /* Permet que le texte soit aligné avec le tiret */
+    margin: 0; /* Supprime les marges des paragraphes dans les listes */
+}
+
+
+
+/* -----------------------------------------------------*/
+/* ---------------- END MISSIONS -------------------------*/
+/* -----------------------------------------------------*/

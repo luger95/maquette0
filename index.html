@@ -5,7 +5,7 @@
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <title>Maquette 0 - Version 0</title>
-    <link rel="stylesheet" href="">
+    <link rel="stylesheet" href="assets/css/globalStyle.css">
     <link rel="stylesheet" href="assets/css/reset.css">
     <meta name="description" content="">
     <script src="assets/js/global.js"></script>
@@ -111,10 +111,11 @@
         <!-- ------------------------------------------------------>
         
         <div id="mission">
-            
-            <img id="img-missions" src="" alt="">
-
-            <h4>MISSIONS LES PLUS COURANTES</h4>
+            <div id="bloc-gauche">
+            <img id="img-mission" src="assets/img/Image-mission1.png" alt="">
+            </div>
+            <div id="bloc-droit">
+            <h4 class="titre-mission">MISSIONS LES PLUS COURANTES</h4>
             <div>
                 
                 <img id="img-left" src="assets/img/fleche-gauche.png" alt="Flèche Gauche" onclick="decrementCounter()">
@@ -122,8 +123,9 @@
                 <p>/04</p>
                 <img id="img-right" src="assets/img/fleche-droite.png" alt="Flèche Droite" onclick="incrementCounter()">
             </div>
+            
+            <hr class="hr-mission">
 
-            <hr>
             
             <div id="mission-recrutement">
                 <h5>RECRUTEMENT</h5>
@@ -195,6 +197,7 @@
                         <p></p>
                     </li>
                 </ul>
+            </div>
             </div>
 
         </div>
