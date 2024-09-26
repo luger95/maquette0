@@ -1,0 +1,14 @@
+#ConsulterPublication #titre{
+    color: rgba(54, 160, 172, 1);
+}
+
+.Publications{
+    width: 300px;
+    display: inline-block;
+}
+
+img{
+    width: 300px;
+    height: 300px;
+}
+
