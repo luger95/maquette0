@@ -51,7 +51,6 @@ body {
     margin: 0 0 0 50px;
     display: flex;
     font-family: 'ZonaProBold';
-
 }
 
 .barNav ul {
@@ -62,6 +61,7 @@ body {
     padding: 0%;
     height: 100%; /* Remplir toute la hauteur de la barre de navigation */
     align-items: center; /* Assure que les éléments enfants sont centrés verticalement */
+    position: relative;
 }
 
 .barNav ul li {
@@ -77,8 +77,8 @@ body {
 
 }
 
-.barNav ul li:hover {
-    border-bottom: solid var(--grey-light-color) 4px;
+.borderBottomForLi {
+    border-bottom: solid var(--grey-light-color) 6px;
 }
 
 .barNav img {
@@ -116,6 +116,23 @@ body {
 }
 
 #searchBar.show {
+    opacity: 1;
+    visibility: visible;
+}
+
+.complementary {
+    position: absolute;
+    width: 90%;
+    height: 600px;
+    top: 103px;
+    background-color: var(--grey-light-color);
+    left: 50%;
+    transform: translateX(-50%);
+    opacity: 0;
+    visibility: hidden;
+}
+
+.complementary.show {
     opacity: 1;
     visibility: visible;
 }
