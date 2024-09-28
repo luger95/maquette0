@@ -1,23 +1,66 @@
+// Variable pour la visibilité de la barre de recherche et du bloc complémentaire
+let visibleSearchBar = false;
+let visibleComplementaryBar = false;
+let activeLiIndex = null; // Stocke l'index de l'élément li actuellement actif
 
-const searchForm = document.querySelector('#searchForm'); //recupération du formulaire contenant la barre de recherche
-const searchIcon = document.querySelector('#searchIcon'); // recupération de l'img 'loupe' par son id 
-const searchBar = document.querySelector('#searchBar'); // recupération de la barre de recherche par sopn id
+// Sélection des éléments du DOM
+const blockForLiInSearchBar = document.querySelector('.complementary');
+const liElements = document.querySelectorAll('.barNav ul li'); // Sélectionne tous les éléments li
+const searchForm = document.querySelector('#searchForm');
+const searchIcon = document.querySelector('#searchIcon');
+const searchBar = document.querySelector('#searchBar');
 
-let visibleSearchBar = false; // compteur pour repeter la visiblité et l'invsibilté de la barre de texte
-searchIcon.addEventListener('click',function(){
 
-    if (visibleSearchBar == false) {
-        searchBar.classList.add('show'); // ajouter la classe show
+
+// -----fonction générique pour basculer la visibilité----------//
+function toggleVisibility(element, state) {
+    if (!state) {
+        element.classList.add('show'); // Ajouter la classe show
     } else {
-        searchBar.classList.remove('show'); // supprimer la class show
+        element.classList.remove('show'); // Supprimer la classe show
     }
-    visibleSearchBar = !visibleSearchBar; // modification du compteur
-})
+    return !state; // Renvoie l'inverse de l'état pour le prochain appel
+}
 
 
-searchForm.addEventListener("submit", function(event) {
-    event.preventDefault(); // Empêche le formulaire de soumettre normalement pour le soumettre en appuyant simplement sur 'entrée'
-    const inputValue = document.getElementById("searchBar").value; //recuperation du champ entrée
 
-    console.log(inputValue); // test
+// -----fonction pour soumettre la barre de recherche----------//
+function submitSearchBar(event) {
+    event.preventDefault(); // Empêche le rechargement de la page
+    const inputValue = searchBar.value; // Récupération du texte entré
+
+    visibleSearchBar = toggleVisibility(searchBar, visibleSearchBar); // Cache la barre après soumission
+    searchBar.value = ""; // Réinitialise la barre
+    
+    console.log(inputValue); // Affiche la valeur dans la console pour tester
+}
+
+
+liElements.forEach((li, index) => {
+    li.addEventListener('click', function() {
+        if (activeLiIndex === index) {
+            // Si le même li est cliqué deux fois, cacher le bloc et enlever la classe de bordure
+            visibleComplementaryBar = toggleVisibility(blockForLiInSearchBar, visibleComplementaryBar);
+            li.classList.remove('borderBottomForLi');
+            activeLiIndex = null; // Réinitialiser l'index actif
+        } else {
+            // Si un autre li est cliqué, d'abord enlever la classe du li précédent
+            if (activeLiIndex !== null) {
+                liElements[activeLiIndex].classList.remove('borderBottomForLi'); // Enlever la classe du li précédent
+            }
+            // Puis afficher le bloc et ajouter la classe au nouveau li
+            visibleComplementaryBar = true;
+            blockForLiInSearchBar.classList.add('show');
+            li.classList.add('borderBottomForLi');
+            activeLiIndex = index; // Stocker l'index du li actif
+        }
+    });
 });
+
+// Gérer la visibilité de la barre de recherche avec l'icône
+searchIcon.addEventListener('click', function() {
+    visibleSearchBar = toggleVisibility(searchBar, visibleSearchBar);
+});
+
+// Soumission du formulaire de recherche
+searchForm.addEventListener('submit', submitSearchBar);
