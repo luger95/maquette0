@@ -1,26 +1,32 @@
 #competences {
+    width: 100%;
     display: grid;
-    grid-template-columns: 5rem auto;
+    grid-template-columns: 8rem auto;
     grid-template-areas: ". h3" "buttons slider";
-    margin: 1rem;
+    margin: 0;
+    background-color: rgb(242,244,247);
 }
 
 #competences h3 {
     grid-area: h3;
+    font-family: "Frontage Condensed";
 }
 
 .competences_slider_arrow{
-    display: none;
 }
 
 #competences_interactible {
-    display: grid;
-    grid-template-columns: 1fr 1fr;
     grid-area: buttons;
+    display: flex;
+    flex-flow: row nowrap;
+    justify-content: space-around;
+    position: relative;
+    top: 1.5rem;
+    left: 2.5rem;
 }
 
 #competences_interactible_arrows {
-    background-color: blue;
+    background-color: rgba(15, 47, 120, 1);
     padding: 0.7rem 0.5rem;
     width: min-content;
     height: min-content;
@@ -38,20 +44,53 @@
 }
 
 #competences_slider {
+    position: relative;
+    width: 100%;
     grid-area: slider;
+    overflow: hidden;
+    font-size: 0.9em;
+    font-weight: bold;
+    font-family: Arial;
+    color: rgba(15, 47, 120, 1);
+}
+
+#competences_slides {
     display: flex;
     flex-flow: row nowrap;
+    justify-content: space-around;
+    width: 100%;
+    padding: 1rem;
 }
 
-#competences_slider div {
-    width: fit-content;
-    height: fit-content;
-    font-family: ZonaProBold;
+.competences_image {
+    width: 14rem;
+    height: 16rem;
+    border-radius: 0.5rem;
+    padding: 1.5rem;
+    display: flex;
+    vertical-align: bottom;
+}
+
+.competences_image p {
+    margin-top: auto;
+    margin-bottom: 0;
     color: white;
+    font-size: 1.5em;
+    height: min-content;
 }
 
-#competences_slider p {
-    font-size: 0.7em;
-    font-family: Arial;
-    color: blue;
+#shutterstock_421594822, #shutterstock_421594822_ {
+    background-image: url("../img/shutterstock_421594822.png");
+}
+
+#shutterstock_703607812 {
+    background-image: url("../img/shutterstock_703607812.png");
+}
+
+#shutterstock_1414838378 {
+    background-image: url("../img/shutterstock_1414838378.png");
+}
+
+#shutterstock_1727886613 {
+    background-image: url("../img/shutterstock_1727886613.png");
 }
