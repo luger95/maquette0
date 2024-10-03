@@ -1,0 +1,192 @@
+@font-face {
+    font-family: 'FrontageCondensedOutline';
+    src: url('../fonts/frontage-condensed-outline/FrontageCondensedOutline.eot');
+    /* IE9 Compat Modes */
+    src: url('../fonts/frontage-condensed-outline/FrontageCondensedOutline.woff') format('woff'),
+        /* Modern Browsers */
+        url('../fonts/frontage-condensed-outline/FrontageCondensedOutline.ttf') format('truetype'),
+        /* Safari, Android, iOS */
+        url('../fonts/frontage-condensed-outline/FrontageCondensedOutline.svg') format('svg');
+    /* Legacy iOS */
+}
+
+@font-face {
+    font-family: 'ZonaProBold';
+    src: url('../fonts/zona-pro/ZonaProBold.eot');
+    /* IE9 Compat Modes */
+    src: url('../fonts/zona-pro/ZonaProBold.woff') format('woff'),
+        /* Modern Browsers */
+        url('../fonts/zona-pro/ZonaProBold.ttf') format('truetype'),
+        /* Safari, Android, iOS */
+}
+
+@font-face {
+    font-family: 'ZonaProExtraLight';
+    src: url('../fonts/zona-pro/ZonaProExtraLight.eot');
+    /* IE9 Compat Modes */
+    src: url('../fonts/zona-pro/ZonaProExtraLight.ttf') format('woff'),
+        /* Modern Browsers */
+        url('../fonts/zona-pro/ZonaProExtraLight.ttf') format('truetype'),
+        /* Safari, Android, iOS */
+}
+
+div#competence-container {
+    position: relative;
+    box-sizing: border-box;
+    height: 646px;
+    background-color: var(--grey-light-color);
+    padding-left: 160px;
+    padding-top: 134px;
+    font-family: 'FrontageCondensedOutline';
+}
+
+div#competence-pagination{
+    position: absolute;
+    display: flex;
+    align-items: center;
+    height: 56px;
+    top: 213px;
+    left: 0;
+}
+
+div#competence-pagination-texte{
+    width: 96px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: var(--primary-color);
+}
+
+span#competence-pagination-page-active{
+    font-family: 'ZonaProBold';
+    font-size: 24px;
+}
+
+span#competence-pagination-total-pages{
+    font-family: 'ZonaProExtraLight';
+    font-size: 16px;
+    position: relative;
+    font-weight: bold;
+    top: 4px;
+}
+
+div.competence-pagination-fleche{
+    background-color: var(--primary-color);
+    width: 48px;
+    height: 100%;
+    z-index: 99;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    cursor: pointer;
+}
+
+div.competence-pagination-fleche > img{
+    height: 6.7px;
+}
+
+div#competence-pagination-gauche > img{
+    rotate: 180deg;
+    opacity: .7;
+}
+
+div#competence-titre-container {
+    overflow-y: hidden;
+    display: flex;
+    align-items: center;
+    margin-bottom: 30px;
+}
+
+div#competence-titre-container:hover>img {
+    transition: all .3s ease-out;
+    margin-left: 8px;
+}
+
+h3#competence-titre {
+    margin: 0;
+    font-size: 30px;
+    font-weight: bold;
+    color: var(--primary-color);
+}
+
+img#competence-titre-fleche {
+    transition: all .3s ease-out;
+    margin-left: 24px;
+    margin-top: 8px;
+    color: var(--primary-color);
+    height: 16px;
+}
+
+div#competence-carousel {
+    display: flex;
+    gap: 23px;
+}
+
+div.competence-carousel-item-image {
+    position: relative;
+    border-radius: 4px;
+    width: 294px;
+    height: 318px;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-end;
+    padding-bottom: 25px;
+    box-sizing: border-box;
+}
+
+div.competence-carousel-item-fond-bleu{
+    transition: all .3s ease-out;
+    position: absolute;
+    top: 0px;
+    border-radius: 4px;
+    background-color: var(--primary-color);
+    opacity: 0;
+    width: 294px;
+    height: 318px;
+}
+
+div.competence-carousel-item-image:hover>span.competence-carousel-item-title{
+    transition: all .3s ease-out;
+    bottom: 0;
+}
+
+div.competence-carousel-item-image:hover>img.competence-carousel-item-fleche {
+    transition: all .3s ease-out;
+    left: 0;
+    opacity: 1;
+}
+
+div.competence-carousel-item-image:hover>div.competence-carousel-item-fond-bleu{
+    transition: all .3s ease-out;
+    opacity: .42;
+}
+
+img.competence-carousel-item-fleche {
+    transition: all .3s ease-out;
+    position: relative;
+    left: -50%;
+    opacity: 0;
+    height: 16px;
+    filter: brightness(0) invert(1);
+}
+
+span.competence-carousel-item-title {
+    transition: all .3s ease-out;
+    position: relative;
+    bottom: -25px;
+    z-index: 99;
+    margin: 0 30px;
+    line-height: 20px;
+    font-weight: bolder;
+    font-size: 18px;
+    font-family: 'ZonaProBold';
+    color: white;
+}
+
+span.competence-carousel-item-subtitle {
+    position: relative;
+    top: 10px;
+    color: var(--primary-color);
+    font-family: 'ZonaProBold';
+    font-size: 16px;
+}

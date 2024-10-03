@@ -1,15 +1,20 @@
 <!doctype html>
 <html lang="fr">
+
 <head>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <title>Maquette 0 - Version 0</title>
-    <link rel="stylesheet" href="">
+    <link rel="stylesheet" href="assets/css/globalStyle.css">
     <link rel="stylesheet" href="assets/css/reset.css">
+    <link rel="stylesheet" href="assets/css/competences.css">
+    <script src="assets/js/competences/classes/Pagination.js" defer></script>
+    <script src="assets/js/competences/competences.js" defer></script>
     <meta name="description" content="">
 </head>
+
 <body>
-<!--
+    <!--
     - Header
         - placer le CSS dans le fichier globalStyle.css
         - si nécessaire, placer le JS dans le fichier global.js
@@ -37,138 +42,268 @@
 
 
 
-<!-- ------------------------------------------------------>
-<!-- ------------------ HEADER ---------------------------->
-<!-- ------------------------------------------------------>
-<header>
-    <div>
-        <p>Le logo</p>
-        <nav>
-            <a href="">Item 1</a>
-            <a href="">Item 2</a>
-        </nav>
-        <div>
-            <p>Rechercher</p>
-        </div>
-    </div>
-    <div>
-        <nav>
-            <a href="">Espace canditat</a>
-            <a href="">Aide & contact</a>
-        </nav>
-    </div>
-</header>
-<!-- ------------------------------------------------------>
-<!-- ------------------ END HEADER ------------------------>
-<!-- ------------------------------------------------------>
-
-
-<div id="home">
-
-
-
-
     <!-- ------------------------------------------------------>
-    <!-- ------------------ SLIDER 1 -------------------------->
+    <!-- ------------------ HEADER ---------------------------->
     <!-- ------------------------------------------------------>
     <header>
-        <div id="home-slider">
+        <div>
+            <p>Le logo</p>
+            <nav>
+                <a href="">Item 1</a>
+                <a href="">Item 2</a>
+            </nav>
+            <div>
+                <p>Rechercher</p>
+            </div>
+        </div>
+        <div>
+            <nav>
+                <a href="">Espace canditat</a>
+                <a href="">Aide & contact</a>
+            </nav>
         </div>
     </header>
     <!-- ------------------------------------------------------>
-    <!-- ------------------ END SLIDER 1 ---------------------->
+    <!-- ------------------ END HEADER ------------------------>
     <!-- ------------------------------------------------------>
 
 
-
-    <!-- ------------------------------------------------------>
-    <!-- --------- double cards (différence) ------------------>
-    <!-- ------------------------------------------------------>
-    <div class="container">
-
-    </div>
-    <!-- ------------------------------------------------------>
-    <!-- --------- END double cards (différence) -------------->
-    <!-- ------------------------------------------------------>
-
-
-    <!-- ------------------------------------------------------>
-    <!-- ----------------- Slider experts --------------------->
-    <!-- ------------------------------------------------------>
-    <div>
-    </div>
-    <!-- ------------------------------------------------------>
-    <!-- --------------- END Slider experts ------------------->
-    <!-- ------------------------------------------------------>
+    <div id="home">
 
 
 
-    <!-- ------------------------------------------------------>
-    <!-- ----------------- Slider missions -------------------->
-    <!-- ------------------------------------------------------>
-    <div></div>
-    <!-- ------------------------------------------------------>
-    <!-- --------------- END Slider missions ------------------>
-    <!-- ------------------------------------------------------>
+
+        <!-- ------------------------------------------------------>
+        <!-- ------------------ SLIDER 1 -------------------------->
+        <!-- ------------------------------------------------------>
+        <header>
+            <div id="home-slider">
+            </div>
+        </header>
+        <!-- ------------------------------------------------------>
+        <!-- ------------------ END SLIDER 1 ---------------------->
+        <!-- ------------------------------------------------------>
 
 
 
-    <!-- ------------------------------------------------------>
-    <!-- --- Témoignage et formulaire de recherche ------------>
-    <!-- ------------------------------------------------------>
-    <div></div>
-    <!-- ------------------------------------------------------>
-    <!-- --- END Témoignage et formulaire de recherche -------->
-    <!-- ------------------------------------------------------>
+        <!-- ------------------------------------------------------>
+        <!-- --------- double cards (différence) ------------------>
+        <!-- ------------------------------------------------------>
+        <div class="container">
+
+        </div>
+        <!-- ------------------------------------------------------>
+        <!-- --------- END double cards (différence) -------------->
+        <!-- ------------------------------------------------------>
+
+
+        <!-- ------------------------------------------------------>
+        <!-- ----------------- Slider experts --------------------->
+        <!-- ------------------------------------------------------>
+        <div>
+        </div>
+        <!-- ------------------------------------------------------>
+        <!-- --------------- END Slider experts ------------------->
+        <!-- ------------------------------------------------------>
 
 
 
-    <!-- ------------------------------------------------------>
-    <!-- ---------------- Slider compétences ------------------>
-    <!-- ------------------------------------------------------>
-    <div></div>
-    <!-- ------------------------------------------------------>
-    <!-- -------------- END Slider compétences ---------------->
-    <!-- ------------------------------------------------------>
+        <!-- ------------------------------------------------------>
+        <!-- ----------------- Slider missions -------------------->
+        <!-- ------------------------------------------------------>
+        <div></div>
+        <!-- ------------------------------------------------------>
+        <!-- --------------- END Slider missions ------------------>
+        <!-- ------------------------------------------------------>
 
 
 
+        <!-- ------------------------------------------------------>
+        <!-- --- Témoignage et formulaire de recherche ------------>
+        <!-- ------------------------------------------------------>
+        <div></div>
+        <!-- ------------------------------------------------------>
+        <!-- --- END Témoignage et formulaire de recherche -------->
+        <!-- ------------------------------------------------------>
+
+
+
+        <!-- ------------------------------------------------------>
+        <!-- ---------------- Slider compétences ------------------>
+        <!-- ------------------------------------------------------>
+        <div id="competence-container">
+
+            <div id="competence-pagination">
+                <div id="competence-pagination-texte">
+                    <span id="competence-pagination-page-active">01/</span>
+                    <span id="competence-pagination-total-pages">00</span>
+                </div>
+
+                <div id="competence-pagination-gauche" class="competence-pagination-fleche">
+                    <img src="assets/img/long-arrow-alt-right.svg" alt="fleche pointant vers la gauche">
+                </div>
+                <div id="competence-pagination-droite" class="competence-pagination-fleche">
+                    <img src="assets/img/long-arrow-alt-right.svg" alt="fleche pointant vers la droite">
+                </div>
+            </div>
+
+            <div id="competence-titre-container">
+                <h3 id="competence-titre">BOOSTER VOS COMPÉTENCES</h3>
+                <img id="competence-titre-fleche" src="assets/img/right-arrow.svg" alt="flèche pointant vers la droite">
+            </div>
+
+            <div id="competence-carousel">
+
+                <div id="carousel-item-1" class="competence-carousel-item">
+                    <div class="competence-carousel-item-image" style="background: url('/assets/img/shutterstock_421594822.png')">
+                        <div class="competence-carousel-item-fond-bleu"></div>
+                        <span class="competence-carousel-item-title">
+                            LOREM IPSUM IS SIMPLY DUMMY TEXT OF THE PRINTING
+                        </span>
+                        <img class="competence-carousel-item-fleche" src="assets/img/right-arrow.svg" alt="flèche pointant vers la droite">
+                    </div>
+                    <span class="competence-carousel-item-subtitle">
+                        Evènement
+                    </span>
+                </div>
+
+                <div id="carousel-item-2" class="competence-carousel-item">
+                    <div class="competence-carousel-item-image" style="background: url('/assets/img/shutterstock_703607812.png')">
+                        <div class="competence-carousel-item-fond-bleu"></div>
+                        <span class="competence-carousel-item-title">
+                            LOREM IPSUM IS SIMPLY DUMMY TEXT OF THE PRINTING
+                        </span>
+                        <img class="competence-carousel-item-fleche" src="assets/img/right-arrow.svg" alt="flèche pointant vers la droite">
+                    </div>
+                    <span class="competence-carousel-item-subtitle">
+                        Atelier
+                    </span>
+                </div>
+
+                <div id="carousel-item-3" class="competence-carousel-item">
+                    <div class="competence-carousel-item-image" style="background: url('/assets/img/shutterstock_1727886613.png')">
+                        <div class="competence-carousel-item-fond-bleu"></div>
+                        <span class="competence-carousel-item-title">
+                            LOREM IPSUM IS SIMPLY DUMMY TEXT OF THE PRINTING
+                        </span>
+                        <img class="competence-carousel-item-fleche" src="assets/img/right-arrow.svg" alt="flèche pointant vers la droite">
+                    </div>
+                    <span class="competence-carousel-item-subtitle">
+                        Atelier
+                    </span>
+                </div>
+
+                <div id="carousel-item-4" class="competence-carousel-item">
+                    <div class="competence-carousel-item-image" style="background: url('/assets/img/shutterstock_1414838378.png')">
+                        <div class="competence-carousel-item-fond-bleu"></div>
+                        <span class="competence-carousel-item-title">
+                            LOREM IPSUM IS SIMPLY DUMMY TEXT OF THE PRINTING
+                        </span>
+                        <img class="competence-carousel-item-fleche" src="assets/img/right-arrow.svg" alt="flèche pointant vers la droite">
+                    </div>
+                    <span class="competence-carousel-item-subtitle">
+                        Séminaire
+                    </span>
+                </div>
+
+                <div id="carousel-item-5" class="competence-carousel-item">
+                    <div class="competence-carousel-item-image" style="background: url('/assets/img/shutterstock_421594822.png')">
+                        <div class="competence-carousel-item-fond-bleu"></div>
+                        <span class="competence-carousel-item-title">
+                            LOREM IPSUM IS SIMPLY DUMMY TEXT OF THE PRINTING
+                        </span>
+                        <img class="competence-carousel-item-fleche" src="assets/img/right-arrow.svg" alt="flèche pointant vers la droite">
+                    </div>
+                    <span class="competence-carousel-item-subtitle">
+                        Evènement
+                    </span>
+                </div>
+
+                <div id="carousel-item-6" class="competence-carousel-item">
+                    <div class="competence-carousel-item-image" style="background: url('/assets/img/shutterstock_703607812.png')">
+                        <div class="competence-carousel-item-fond-bleu"></div>
+                        <span class="competence-carousel-item-title">
+                            LOREM IPSUM IS SIMPLY DUMMY TEXT OF THE PRINTING
+                        </span>
+                        <img class="competence-carousel-item-fleche" src="assets/img/right-arrow.svg" alt="flèche pointant vers la droite">
+                    </div>
+                    <span class="competence-carousel-item-subtitle">
+                        Atelier
+                    </span>
+                </div>
+
+                <div id="carousel-item-7" class="competence-carousel-item">
+                    <div class="competence-carousel-item-image" style="background: url('/assets/img/shutterstock_1727886613.png')">
+                        <div class="competence-carousel-item-fond-bleu"></div>
+                        <span class="competence-carousel-item-title">
+                            LOREM IPSUM IS SIMPLY DUMMY TEXT OF THE PRINTING
+                        </span>
+                        <img class="competence-carousel-item-fleche" src="assets/img/right-arrow.svg" alt="flèche pointant vers la droite">
+                    </div>
+                    <span class="competence-carousel-item-subtitle">
+                        Atelier
+                    </span>
+                </div>
+
+                <div id="carousel-item-8" class="competence-carousel-item">
+                    <div class="competence-carousel-item-image" style="background: url('/assets/img/shutterstock_1414838378.png')">
+                        <div class="competence-carousel-item-fond-bleu"></div>
+                        <span class="competence-carousel-item-title">
+                            LOREM IPSUM IS SIMPLY DUMMY TEXT OF THE PRINTING
+                        </span>
+                        <img class="competence-carousel-item-fleche" src="assets/img/right-arrow.svg" alt="flèche pointant vers la droite">
+                    </div>
+                    <span class="competence-carousel-item-subtitle">
+                        Séminaire
+                    </span>
+                </div>
+                
+            </div>
+
+        </div>
+        <!-- ------------------------------------------------------>
+        <!-- -------------- END Slider compétences ---------------->
+        <!-- ------------------------------------------------------>
+
+
+
+        <!-- ---------------------------------------------------------->
+        <!---- Encart "mission à nous confier" et Nos publications ---->
+        <!-- ---------------------------------------------------------->
+        <div></div>
+        <!-- ---------------------------------------------------------->
+        <!-- END Encart "mission à nous confier" et Nos publications -->
+        <!-- ---------------------------------------------------------->
+
+
+
+
+        <!-- ---------------------------------------------------------->
+        <!------------------------ Actualités ------------------------->
+        <!-- ---------------------------------------------------------->
+
+        <!-- ---------------------------------------------------------->
+        <!---------------------- END Actualités ----------------------->
+        <!-- ---------------------------------------------------------->
+
+
+
+        <!-- ---------------------------------------------------------->
+        <!------------------------ FOOTER ------------------------->
+        <!-- ---------------------------------------------------------->
+
+    </div> <!-- fermeture de la div id="home" -->
+    <footer>
+        <div class="container">
+        </div>
+    </footer>
     <!-- ---------------------------------------------------------->
-    <!---- Encart "mission à nous confier" et Nos publications ---->
+    <!---------------------- END FOOTER ----------------------->
     <!-- ---------------------------------------------------------->
-    <div></div>
-    <!-- ---------------------------------------------------------->
-    <!-- END Encart "mission à nous confier" et Nos publications -->
-    <!-- ---------------------------------------------------------->
-
-
-
-
-    <!-- ---------------------------------------------------------->
-    <!------------------------ Actualités ------------------------->
-    <!-- ---------------------------------------------------------->
-
-    <!-- ---------------------------------------------------------->
-    <!---------------------- END Actualités ----------------------->
-    <!-- ---------------------------------------------------------->
-
-
-
-<!-- ---------------------------------------------------------->
-<!------------------------ FOOTER ------------------------->
-<!-- ---------------------------------------------------------->
-
-</div> <!-- fermeture de la div id="home" -->
-<footer>
-    <div class="container">
-    </div>
-</footer>
-<!-- ---------------------------------------------------------->
-<!---------------------- END FOOTER ----------------------->
-<!-- ---------------------------------------------------------->
 
 
 
 
 </body>
+
 </html>
