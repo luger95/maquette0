@@ -1,5 +1,5 @@
+const PIXELPERSLIDE = -470;
 let slideNumber = 1
-let pixelPerSlide = -470;
 
 let numberOfSlides = document.getElementsByClassName("expertise-item").length;
 let itemIndex = document.getElementById("item-index")
@@ -12,15 +12,17 @@ function setSlidesLeftAttribute(slideNum) {
     let items = document.getElementsByClassName("expertise-item")
 
     for(item of items) {
-        item.style.left = slideNum * pixelPerSlide + "px"
+        item.style.left = slideNum * PIXELPERSLIDE + "px"
     }
 
     itemIndex.innerText = pad(slideNum, 2) + "/" + pad((numberOfSlides - 3), 2)
 }
 
 function setArrowsColor() {
-    if(slideNumber == 1) expertiseLeftArrow.style.color = "gray"; else expertiseLeftArrow.style.color = "white";
-    if(slideNumber == numberOfSlides - 3) expertiseRightArrow.style.color = "gray"; else expertiseRightArrow.style.color = "white";
+    if(slideNumber == 1) expertiseLeftArrow.style.color = "gray"; 
+    else expertiseLeftArrow.style.color = "white";
+    if(slideNumber == numberOfSlides - 3) expertiseRightArrow.style.color = "gray"; 
+    else expertiseRightArrow.style.color = "white";
 }
 
 function pad(num, size) {
@@ -46,5 +48,3 @@ document.getElementById("right").addEventListener("click", () => {
         setArrowsColor()
     }
 })
-
-

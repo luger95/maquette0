@@ -13,8 +13,10 @@
     
 }
 
-#experts-subtitle {
-    color: var(--blue-color)
+#experts-keywords {
+    color: var(--blue-color);
+    font-size: 1.25em;
+    font-family: 'ZonaProBold';
 }
 
 /* Section Subtitles */
