@@ -75,6 +75,34 @@ h2 {
 /* ----------------- Actualités ------------------------*/
 /* -----------------------------------------------------*/
 
+.container {
+    display: flex;
+    row-gap: 10px;
+    column-gap: 20px;
+  }
+  
+body {
+    font-size: 16px;
+    margin: 0;
+    font-family: Arial, Helvetica, sans-serif;
+    background-color: black;
+}
+  
+ .actualite_left {
+    height: 100%;
+    width: 200px;
+    position: fixed;
+    z-index: 1;
+    top: 0;
+    left: 0;
+    overflow-x: hidden;
+  }
+  
+  .actualite_right {
+    margin-left: 200px;
+    padding-left: 20px;
+  }
+
 /* -----------------------------------------------------*/
 /* --------------- END Actualités ----------------------*/
 /* -----------------------------------------------------*/
