@@ -157,21 +157,32 @@ ul li p {
 .conteur-mission {
     display: flex;
     align-items: center;
+    margin-left: 20px;
 }
 
 .arrow {
     cursor: pointer;
     font-size: 25px;
+    margin: 5px;
+    color: #A2B6DF;
 }
 
 #conteur {
     font-size: 18px;
     font-family: 'ZonaProBold'; 
+    color: #A2B6DF;
 }
 
 .titre-mission {
     font-family: 'ZonaProBold';
     font-size: 22px;
+}
+
+
+#mission-interim,
+#mission-performance,
+#transformation {
+    display: none; 
 }
 
 
