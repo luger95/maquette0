@@ -41,5 +41,7 @@ text-transform: uppercase;
     background-repeat: no-repeat;
     margin-left:23px;
     display: flex;
+    flex-direction: column;
+    justify-content: center;
     align-items: center;
 }
