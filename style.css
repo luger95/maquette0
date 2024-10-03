@@ -1,26 +1,53 @@
+@font-face {
+    font-family: 'PoliceTitre';
+    src: url('./police/ZonaPro-ExtraBold.ttf') format('truetype');
+  }
+
+
+body{
+    font-family: "PoliceTitre", sans-serif;
+}
 img.slider1 {
     display: none;
-    width: 1920px;
-    height: 1080px;
-
-
+    width: 100%;
 }
+
 #image1{
     display: inline-block;
 }
 #home-slider{
     position: relative;
 }
-
+.titreimg{
+    position: absolute;
+    display: none;
+    font-size: 70px;
+    top: 35%;
+    left: 80px;
+    color: #FFFF;
+}
 #titre{
-    top: 50%;
-    left: 0;
+    display: block;
+    
 }
 
 .txtimg{
     position: absolute;
+    
 }
 #nav{   
     bottom: 0;
     left: 0;
+    width: 100%;
+    font-size: 0;
+    padding: 0;
 }
+
+li{
+    font-size: 13px;
+    display: inline-block;
+    padding: 3%;
+    margin: 0px;
+    background-color: #FFFF ;
+}
+
