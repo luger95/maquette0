@@ -8,7 +8,8 @@
 #temoignage{
     width: 50%;
     left: 0px;
-    box-shadow: 0 4px 20px rgba(0, 0, 0, 0.1);;
+    box-shadow: 0 4px 20px rgba(0, 0, 0, 0.1);
+    min-height: 100%;
 }
 
 #FormulaireRecherche{
@@ -16,6 +17,7 @@
     width: 50%;
     position: absolute;
     right: 0px;
+    min-height: 100%;
 }
 
 #TitreFormulaire{
@@ -50,13 +52,16 @@
     font-weight: bold;
     text-align: left;
     margin-left: 50px;
+    margin-top: 20px;
+    margin-bottom: 20px;
 }
 
 
 .button-container{
     gap: 10px;
-    text-align: center;
-
+    margin-left: 50px;
+    margin-top: 20px;
+    margin-bottom: 20px;
 }
 .line {
     display: inline-block;
@@ -66,6 +71,7 @@
     transition: all 0.3s ease-in-out; 
     cursor: pointer; 
     border-radius: 25px;
+    border: none;
 }
 
 
@@ -83,6 +89,7 @@
 
 .avis{
     display: none;
+    margin-left: 50px;
 }
 
 .avis.actif{
@@ -118,4 +125,5 @@
 
 #avis-text{
     text-align: left;
+    max-width: 44%;
 }
