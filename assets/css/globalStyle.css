@@ -115,7 +115,8 @@ h2 {
   
   #bloc-droit {
     flex: 2; 
-    margin-top: 30px;
+    margin-top: 50px;
+    margin-left: 30px;
   }
 
   #img-mission {
@@ -132,6 +133,7 @@ h2 {
     background-color: #A2B6DF;
     height: 4px;
     margin-top: 0px;
+    
     
 }
 
@@ -179,7 +181,6 @@ ul li p {
     font-family: 'ZonaProBold';
     font-size: 22px;
 }
-
 
 #mission-interim,
 #mission-performance,
