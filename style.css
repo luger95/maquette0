@@ -59,7 +59,7 @@
 
 .button-container{
     gap: 10px;
-    margin-left: 50px;
+    margin-left: 150px;
     margin-top: 20px;
     margin-bottom: 20px;
 }
@@ -89,7 +89,7 @@
 
 .avis{
     display: none;
-    margin-left: 50px;
+    margin-left: 150px;
 }
 
 .avis.actif{
@@ -104,20 +104,31 @@
     object-fit: cover; 
 }
 
-#client{
-    display: inline-block; 
-    vertical-align: top; 
+
+
+
+#container-photo {
+    position: relative;
+    display: grid; 
+    grid-template-columns: 180px auto;
+    margin-right: 20px;
+    
 }
 
+#pp{
+    grid-row-start: 1;
+    grid-column-start: 1;
+    margin-right: 0px;
+}
 
-.photo-container {
-    position: relative;
-    display: inline-block; 
-    margin-right: 20px;
+#client{
+    grid-row-start: 1;
+    grid-column-start: 2;
+    margin-left: 0px;
 }
 
 #titreAvis{
-    text-align: center;
+    margin-left: 150px;
     font-family: Arial;
     letter-spacing: 2px;
     color: navy;
@@ -126,4 +137,20 @@
 #avis-text{
     text-align: left;
     max-width: 44%;
+
 }
+
+#NomClient{
+    font-weight: bold;
+    font-size: x-large;
+    color: navy;
+}
+
+#profession{
+    font-size: small;
+}
+
+#BARRE{
+    margin-left: 80px;
+}
+
