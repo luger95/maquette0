@@ -9,6 +9,8 @@
 
 ul{
     list-style: none;
+    display: inline-flex;
+    overflow : visible;
 }
 
 
@@ -19,6 +21,8 @@ letter-spacing: 0px;
 color: #0F2F78;
 text-transform: uppercase;
 }
+
+
 .expert-sous-titre{
     text-align: center;
     font: normal normal normal 20px/63px FrontageCondensed-Bold;
@@ -27,15 +31,15 @@ text-transform: uppercase;
 }
 
 .SlideExpert{
-    background: #FFFFFF 0% 0% no-repeat padding-box;
+    background: #ffffff 0% 0% no-repeat padding-box;
     border: 6px solid #A2B6DF;
     border-radius: 4px;
     opacity: 1;
-    align-items: start;
-}
-
-li {
-    background-image: url(assets/img/Rectangle\ 40.svg);
+    width : 18.375em;
+    height: 19.875em;
     background-size: auto;
     background-repeat: no-repeat;
+    margin-left:23px;
+    display: flex;
+    align-items: center;
 }
