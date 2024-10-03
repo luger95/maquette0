@@ -183,7 +183,11 @@ ul li p {
 
 #mission-interim,
 #mission-performance,
-#transformation {
+#transformation,
+#mission-interim-img,
+#mission-performance-img,
+#transformation-img
+ {
     display: none; 
 }
 
