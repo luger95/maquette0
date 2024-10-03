@@ -45,7 +45,7 @@ class Pagination{
      * Avance la pagination d'un cran (Ex: passage de l'index 1 à l'index 2)
      */
     avancerPagination(){
-        if(this.index == this.nbTotalPages){
+        if(this.index === this.nbTotalPages){
             return;
         }
         document.getElementById(`carousel-item-${this.index}`).style.display = "none";
@@ -57,7 +57,7 @@ class Pagination{
      * Recule la pagination d'un cran (Ex: passage de l'index 2 à l'index 1)
      */
     reculerPagination(){    
-        if(this.index == 1){
+        if(this.index === 1){
             return;
         }
         document.getElementById(`carousel-item-${this.index-1}`).style.display = "";
