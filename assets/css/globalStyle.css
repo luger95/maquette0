@@ -152,6 +152,10 @@ ul li p {
     margin: 0; 
     font-weight: bold;
     font-size: 13px;
+    font: normal normal normal 16px/24px ZonaPro;
+    letter-spacing: 0px;
+    color: #000000;
+    opacity: 1;
 }
 
 .titre-bloc {
@@ -209,22 +213,26 @@ ul li p {
     font: normal normal normal 20px/63px ZonaProBold;
     letter-spacing: 0px;
     color: #91D0D4;
+    margin-bottom: -20px;
 }
 #mission-interim h5 {
     font: normal normal normal 20px/63px ZonaProBold;
     color : rgb(179, 67, 62);
     font-weight: bold;
+    margin-bottom: -20px;
 }
 #mission-performance h5 {
     font: normal normal normal 20px/63px ZonaProBold;
     color: rgb(217, 164, 103);
     font-weight: bold;
+    margin-bottom: -20px;
 }
 
 #transformation h5 {
     font: normal normal normal 20px/63px ZonaProBold;
     color: rgb(0, 90, 61);
-    font-weight: bold;    
+    font-weight: bold;  
+    margin-bottom: -20px;  
 }   
 
 
