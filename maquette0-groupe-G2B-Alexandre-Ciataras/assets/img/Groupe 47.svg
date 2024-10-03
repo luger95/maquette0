@@ -1,0 +1,25 @@
+<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="128" height="70" viewBox="0 0 128 70">
+  <defs>
+    <clipPath id="clip-path">
+      <rect id="Rectangle_77" data-name="Rectangle 77" width="128" height="70" transform="translate(0 0.024)" fill="none" stroke="#0f2f78" stroke-width="4"/>
+    </clipPath>
+  </defs>
+  <g id="Groupe_47" data-name="Groupe 47" transform="translate(0 0.25)">
+    <g id="Groupe_44" data-name="Groupe 44" transform="translate(0 -0.274)">
+      <g id="Groupe_43" data-name="Groupe 43" transform="translate(0 0)" clip-path="url(#clip-path)">
+        <path id="Tracé_69" data-name="Tracé 69" d="M4,65.1V59.527L9.574,1h22.3l5.574,58.527V65.1" transform="translate(7.148 2.136)" fill="none" stroke="#0f2f78" stroke-width="4"/>
+      </g>
+    </g>
+    <path id="Tracé_70" data-name="Tracé 70" d="M17,17.148,28.148,6h8.361V22.722" transform="translate(30.379 10.797)" fill="none" stroke="#0f2f78" stroke-width="4"/>
+    <path id="Tracé_71" data-name="Tracé 71" d="M26,17.148,37.148,6h8.361V22.722" transform="translate(46.462 10.797)" fill="none" stroke="#0f2f78" stroke-width="4"/>
+    <g id="Groupe_46" data-name="Groupe 46" transform="translate(0 -0.274)">
+      <g id="Groupe_45" data-name="Groupe 45" transform="translate(0 0)" clip-path="url(#clip-path)">
+        <path id="Tracé_72" data-name="Tracé 72" d="M35,17.148,46.148,6h8.361V56.166" transform="translate(62.545 11.071)" fill="none" stroke="#0f2f78" stroke-width="4"/>
+        <line id="Ligne_19" data-name="Ligne 19" x1="128" transform="translate(0 67.024)" fill="none" stroke="#0f2f78" stroke-width="4"/>
+      </g>
+    </g>
+    <line id="Ligne_20" data-name="Ligne 20" y2="11" transform="translate(59 44.75)" fill="none" stroke="#0f2f78" stroke-width="4"/>
+    <line id="Ligne_21" data-name="Ligne 21" y2="11" transform="translate(70 44.75)" fill="none" stroke="#0f2f78" stroke-width="4"/>
+    <line id="Ligne_22" data-name="Ligne 22" y2="11" transform="translate(81 44.75)" fill="none" stroke="#0f2f78" stroke-width="4"/>
+  </g>
+</svg>
