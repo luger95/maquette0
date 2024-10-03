@@ -61,6 +61,96 @@ h2 {
     max-width: 1246px;
 }
 
+
+
+.grid {
+    display: grid;
+    text-align: center;
+    gap: 20px;
+    grid-template-columns: 1fr 1fr;
+
+}
+
+.difference .imgcontainer::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(8, 46, 129, 0.6);
+    opacity: 50%;
+    transition: opacity 0.5s ease;
+    z-index: 3;
+}
+
+.difference .imgcontainer:hover::before {
+    opacity: 0%;
+    z-index: 1;
+}
+
+.imgcontainer {
+    width: 100%;
+    overflow: hidden;
+    position: relative;
+}   
+
+.difference h2 {
+    text-align: center;
+    color: navy;
+}
+
+.difference img {
+    width: 100%;
+    height: 100%;
+    position: relative;
+    display: block;
+    z-index: 1;
+    object-fit: cover;
+    filter: brightness(0.5) contrast(1.2);
+    transition: filter 0.5s ease, transform 1s ease; 
+    transform: scale(1);
+}
+
+.difference img:hover {
+    filter: none;
+    transform: scale(1.2);
+}
+
+.difference p {
+    font-size: 30px;
+    color: white;
+    letter-spacing: 5px;
+    line-height: 0;
+    font-family: ZonaProBold;
+    font-stretch: 50%; 
+}
+
+
+.imgtext1 img {
+    position: relative;
+}
+
+.imgtext1 p {
+    position: absolute;
+    top: 70%;
+    right: 17%;
+    z-index: 2;
+}
+
+.imgtext2 img {
+    position: relative;
+}
+
+.imgtext2 p {
+    position: absolute;
+    top: 70%;
+    left: 17%;
+    z-index: 2;
+}
+
+
+
 /* -----------------------------------------------------*/
 /* ------------------ HEADER ---------------------------*/
 /* -----------------------------------------------------*/
