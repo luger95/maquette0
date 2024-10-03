@@ -150,6 +150,8 @@ ul li {
 ul li p {
     display: inline; 
     margin: 0; 
+    font-weight: bold;
+    font-size: 13px;
 }
 
 .titre-bloc {
