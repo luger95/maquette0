@@ -14,21 +14,28 @@ function updateMissionDisplay() {
     document.getElementById('mission-interim').style.display = 'none';
     document.getElementById('mission-performance').style.display = 'none';
     document.getElementById('transformation').style.display = 'none';
-
+    document.getElementById('mission-recrutement-img').style.display = 'none';
+    document.getElementById('mission-interim-img').style.display = 'none';
+    document.getElementById('mission-performance-img').style.display = 'none';
+    document.getElementById('transformation-img').style.display = 'none';
 
     switch(currentIndex) {
     
         case 1:
             document.getElementById('mission-recrutement').style.display = 'block';
+            document.getElementById('mission-recrutement-img').style.display = 'block';
             break;
         case 2:
             document.getElementById('mission-interim').style.display = 'block';
+            document.getElementById('mission-interim-img').style.display = 'block';
             break;
         case 3:
             document.getElementById('mission-performance').style.display = 'block';
+            document.getElementById('mission-performance-img').style.display = 'block';
             break;
         case 4:
             document.getElementById('transformation').style.display = 'block';
+            document.getElementById('transformation-img').style.display = 'block';
             break;
     }
 }
