@@ -10,19 +10,29 @@ const minIndex = 1;
 function updateCounter(newValue) {
     const counterElement = document.getElementById('counter'); 
     
-    if (newValue >= minIndex && newValue <= maxIndex) {
+
         currentIndex = newValue;
         counterElement.textContent = currentIndex;
         updateMissionDisplay(); 
-    }
+    
 }
 
-function incrementCounter() {
-    updateCounter(currentIndex + 1);
+function incrementCounter() { 
+    if(currentIndex +1 > maxIndex){
+        updateCounter(1);
+    }
+    else{updateCounter(currentIndex + 1);}
+   
 }
 
 function decrementCounter() {
-    updateCounter(currentIndex - 1);
+    if(currentIndex -1 < minIndex){
+        updateCounter(4) ;
+    }
+    else{
+        updateCounter(currentIndex - 1);
+    }
+    
 }
 
 
@@ -35,6 +45,7 @@ function updateMissionDisplay() {
 
 
     switch(currentIndex) {
+    
         case 1:
             document.getElementById('mission-recrutement').style.display = 'block';
             break;
