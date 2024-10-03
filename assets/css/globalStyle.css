@@ -190,7 +190,27 @@ ul li p {
  {
     display: none; 
 }
+#mission-recrutement h5 {
+    font: normal normal normal 20px/63px ZonaProBold;
+    letter-spacing: 0px;
+    color: #91D0D4;
+}
+#mission-interim h5 {
+    font: normal normal normal 20px/63px ZonaProBold;
+    color : rgb(179, 67, 62);
+    font-weight: bold;
+}
+#mission-performance h5 {
+    font: normal normal normal 20px/63px ZonaProBold;
+    color: rgb(217, 164, 103);
+    font-weight: bold;
+}
 
+#transformation h5 {
+    font: normal normal normal 20px/63px ZonaProBold;
+    color: rgb(0, 90, 61);
+    font-weight: bold;    
+}   
 
 
 /* -----------------------------------------------------*/
