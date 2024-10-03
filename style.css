@@ -1,0 +1,52 @@
+.TemoignageFormulaire{
+    display: flex;
+    flex-direction: row;
+    flex-wrap: nowrap;
+    position: relative;
+}
+
+#temoignage{
+    width: 50%;
+    left: 0px;
+}
+
+#FormulaireRecherche{
+    background-color: navy;
+    width: 50%;
+    position: absolute;
+    right: 0px;
+}
+
+#TitreFormulaire{
+    color:rgb(176, 198, 238);
+    margin-left: 50px;
+    font-family: Arial;
+    letter-spacing: 2px;
+}
+
+#formulaire{
+    display: flex;
+    flex-direction: column;
+}
+
+.critere{
+    background: none;
+    color: rgb(176, 198, 238);
+    border: none;
+    border-bottom: solid 1px rgb(176, 198, 238);
+    margin-top: 20px;
+    margin-bottom: 20px;
+    margin-right: 50px;
+    margin-left: 50px;
+    padding: 10px;
+    width: 60%;
+}
+
+#rechercher{
+    color: white;
+    background: none;
+    border: none;
+    font-weight: bold;
+    text-align: left;
+    margin-left: 50px;
+}
