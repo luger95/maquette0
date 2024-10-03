@@ -74,8 +74,24 @@ h2 {
 /* -----------------------------------------------------*/
 /* ----------------- Actualités ------------------------*/
 /* -----------------------------------------------------*/
-#actualite {
-    padding: 100px;
+.container {
+    display: flex;
+    justify-content: space-between; 
+    width: 100%; 
+}
+
+.left-part {
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    padding: 20px;
+}
+
+.right-part {
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    padding: 20px;
 }
 
 #title {
@@ -84,25 +100,30 @@ h2 {
     text-transform: uppercase;
 }
 
-#right-part {
-    padding-right: 50px;
-    text-align: left;
-    float: right;
-}
-
 #date {
     font: normal normal normal 16px/36px ZonaPro;
 }
 
-#actu1, #actu2, #actu3 {
+#actu1, #actu2, #actu3, #actu-left {
     font: normal normal normal 24px/30px ZonaPro-SemiBold;
 }
 
-#maj:hover {
-    background-color: lightskyblue;
-    opacity: 1;
+#maj {
+    box-shadow: inset 0 0 0 0 #A2B6DF;
+    transition: color .3s ease-in-out, box-shadow .3s ease-in-out;
 }
 
+#maj:hover {
+    box-shadow: inset 100% 0 0 0 #A2B6DF;
+}
+
+#imgLeft {
+    width: 294px; /* Taille de l'image */
+    height: 318px;
+    margin-bottom: 20px; /* Ajoute un peu d'espace sous l'image */
+}
+
+/*
 #imgLeft {
     top: 5708px;
     left: 63px;
