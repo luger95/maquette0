@@ -1,0 +1,121 @@
+.TemoignageFormulaire{
+    display: flex;
+    flex-direction: row;
+    flex-wrap: nowrap;
+    position: relative;
+}
+
+#temoignage{
+    width: 50%;
+    left: 0px;
+    box-shadow: 0 4px 20px rgba(0, 0, 0, 0.1);;
+}
+
+#FormulaireRecherche{
+    background-color: navy;
+    width: 50%;
+    position: absolute;
+    right: 0px;
+}
+
+#TitreFormulaire{
+    color:rgb(176, 198, 238);
+    margin-left: 50px;
+    font-family: Arial;
+    letter-spacing: 2px;
+}
+
+#formulaire{
+    display: flex;
+    flex-direction: column;
+}
+
+.critere{
+    background: none;
+    color: rgb(176, 198, 238);
+    border: none;
+    border-bottom: solid 1px rgb(176, 198, 238);
+    margin-top: 20px;
+    margin-bottom: 20px;
+    margin-right: 50px;
+    margin-left: 50px;
+    padding: 10px;
+    width: 60%;
+}
+
+#rechercher{
+    color: white;
+    background: none;
+    border: none;
+    font-weight: bold;
+    text-align: left;
+    margin-left: 50px;
+}
+
+
+.button-container{
+    gap: 10px;
+    text-align: center;
+
+}
+.line {
+    display: inline-block;
+    width: 20px;
+    height: 5px;
+    background-color: #5e636b;
+    transition: all 0.3s ease-in-out; 
+    cursor: pointer; 
+    border-radius: 25px;
+}
+
+
+.line:hover {
+    width: 50px;
+    height: 5px;
+    background-color: navy;
+}
+
+.line.active{
+    width: 50px;
+    height: 5px;
+    background-color: navy;
+}
+
+.avis{
+    display: none;
+}
+
+.avis.actif{
+    display: block;
+}
+
+.image-ronde { 
+    width: 150px; 
+    height: 150px;
+    border: none; 
+    border-radius: 75px; 
+    object-fit: cover; 
+}
+
+#client{
+    display: inline-block; 
+    vertical-align: top; 
+}
+
+
+.photo-container {
+    position: relative;
+    display: inline-block; 
+    margin-right: 20px;
+}
+
+#titreAvis{
+    text-align: center;
+    font-family: Arial;
+    letter-spacing: 2px;
+    color: navy;
+}
+
+#avis-text{
+    text-align: left;
+}
