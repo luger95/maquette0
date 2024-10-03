@@ -134,18 +134,18 @@ h2 {
 }
 
 ul {
-    list-style-type: '-'; /* Ajoute des tirets comme puces de liste */
-    padding-left: 0; /* Supprime les marges par défaut des listes */
-    margin-bottom: 0; /* Réduit l'espace sous la liste */
+    list-style-type: '-'; 
+    padding-left: 0; 
+    margin-bottom: 0; 
 }
 
 ul li {
-    margin-bottom: 5px; /* Réduit l'espace entre les éléments de la liste */
+    margin-bottom: 5px; 
 }
 
 ul li p {
-    display: inline; /* Permet que le texte soit aligné avec le tiret */
-    margin: 0; /* Supprime les marges des paragraphes dans les listes */
+    display: inline; 
+    margin: 0; 
 }
 
 
