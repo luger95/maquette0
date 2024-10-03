@@ -39,10 +39,25 @@
     --blue-color: rgba(162, 182, 223, 1)
 }
 
+
 body {
     font-size: 16px;
+    font-family: 'ZonaProBold';
 }
 
+#navbar-left {
+    display: inline-block;
+    margin:30px;
+}
+
+#navbar-right {
+    display: inline-block;
+    padding-left: 650px;
+}
+
+#ttk {
+    padding: 20px;
+}
 
 h2 {
     font-size: 2.5em;
@@ -84,6 +99,10 @@ h2 {
 /* -----------------------------------------------------*/
 /* ------------------ HEADER ---------------------------*/
 /* -----------------------------------------------------*/
+
+header {
+    display: inline-block;
+}
 
 /* -----------------------------------------------------*/
 /* ---------------- END HEADER -------------------------*/
