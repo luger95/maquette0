@@ -148,6 +148,32 @@ ul li p {
     margin: 0; 
 }
 
+.titre-bloc {
+    display: flex;
+    align-items: center;
+}
+
+
+.conteur-mission {
+    display: flex;
+    align-items: center;
+}
+
+.arrow {
+    cursor: pointer;
+    font-size: 25px;
+}
+
+#conteur {
+    font-size: 18px;
+    font-family: 'ZonaProBold'; 
+}
+
+.titre-mission {
+    font-family: 'ZonaProBold';
+    font-size: 22px;
+}
+
 
 
 /* -----------------------------------------------------*/
