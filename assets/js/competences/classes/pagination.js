@@ -21,22 +21,22 @@ class Pagination{
      * Modifie le code HTML pour afficher sur la page le nombre total de cartes.
      */
     updateHTMLTotalOfCards(){
-        document.querySelector('span#competence-pagination-total-pages').innerHTML = this.nbTotalPages > 9 ? this.nbTotalPages : `0${this.nbTotalPages}`;
+        document.getElementById('competence-pagination-total-pages').innerHTML = this.nbTotalPages > 9 ? this.nbTotalPages : `0${this.nbTotalPages}`;
     }
 
     updateHTMLIndex(){
-        document.querySelector('span#competence-pagination-page-active').innerHTML = this.index > 9 ? `${this.index}/` : `0${this.index}/`;
+        document.getElementById('competence-pagination-page-active').innerHTML = this.index > 9 ? `${this.index}/` : `0${this.index}/`;
     }
 
     /**
      * Ajoute aux boutons de navigations les listeners pour gérer les clics
      */
     addClickListeners(){
-        document.querySelector('#competence-pagination-droite').addEventListener("click", () => {
+        document.getElementById('competence-pagination-droite').addEventListener("click", () => {
             this.avancerPagination();
         });
 
-        document.querySelector('#competence-pagination-gauche').addEventListener("click", () => {
+        document.getElementById('competence-pagination-gauche').addEventListener("click", () => {
             this.reculerPagination();
         });
     }
