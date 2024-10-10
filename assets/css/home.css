@@ -1,0 +1,71 @@
+@font-face {
+    font-family: 'FrontageCondensedOutline';
+    src: url('../fonts/frontage-condensed-outline/FrontageCondensedOutline.eot');
+    src: url('../fonts/frontage-condensed-outline/FrontageCondensedOutline.eot') format('embedded-opentype'),
+    url('../fonts/frontage-condensed-outline/FrontageCondensedOutline.woff2') format('woff2'),
+    url('../fonts/frontage-condensed-outline/FrontageCondensedOutline.woff') format('woff'),
+    url('../fonts/frontage-condensed-outline/FrontageCondensedOutline.ttf') format('truetype'),
+    url('../fonts/frontage-condensed-outline/FrontageCondensedOutline.svg#FrontageCondensedOutline') format('svg');
+}
+@font-face {
+    font-family: 'ZonaProBold';
+    src: url('../fonts/zona-pro/ZonaProBold.eot');
+    src: url('../fonts/zona-pro/ZonaProBold.eot') format('embedded-opentype'),
+    url('../fonts/zona-pro/ZonaProBold.woff2') format('woff2'),
+    url('../fonts/zona-pro/ZonaProBold.woff') format('woff'),
+    url('../fonts/zona-pro/ZonaProBold.ttf') format('truetype'),
+    url('../fonts/zona-pro/ZonaProBold.svg#ZonaProBold') format('svg');
+}
+@font-face {
+    font-family: 'ZonaProExtraLight';
+    src: url('../fonts/zona-pro/ZonaProExtraLight.eot');
+    src: url('../fonts/zona-pro/ZonaProExtraLight.eot') format('embedded-opentype'),
+    url('../fonts/zona-pro/ZonaProExtraLight.woff2') format('woff2'),
+    url('../fonts/zona-pro/ZonaProExtraLight.woff') format('woff'),
+    url('../fonts/zona-pro/ZonaProExtraLight.ttf') format('truetype'),
+    url('../fonts/zona-pro/ZonaProExtraLight.svg#ZonaProExtraLight') format('svg');
+}
+
+#logo {
+    font-size: 36px;
+    display: inline-block;
+    font-family: 'ZonaProBold';
+    padding-right: 80px;
+}
+
+#search {
+    padding-left: 200px;
+    text-decoration:none;
+    max-width:2%;
+    max-height:2%;
+}
+
+#evolve {
+    font-size: 80px;
+    white-space: pre;
+    padding-left: 50px;
+}
+
+#candidat{
+    text-decoration: none;
+    padding-right: 10px;
+}
+
+#contact {
+    text-decoration: none;
+}
+
+#france {
+    padding-left:45px;
+}
+
+.flex {
+    padding-left: 50px;
+    height: 110px;
+    align-items: center;
+    display: flex;
+    gap:79px;
+    color:black;
+    background-color: white;
+    overflow: hidden;
+}
