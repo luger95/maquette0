@@ -8,7 +8,7 @@
     font-family: 'FrontageCondensedOutline';
 }
 
-div#competence-pagination{
+#competence-pagination{
     position: absolute;
     display: flex;
     align-items: center;
@@ -17,7 +17,7 @@ div#competence-pagination{
     left: 0;
 }
 
-div#competence-pagination-texte{
+#competence-pagination-texte{
     width: 96px;
     display: flex;
     justify-content: center;
@@ -25,12 +25,12 @@ div#competence-pagination-texte{
     color: var(--primary-color);
 }
 
-span#competence-pagination-page-active{
+#competence-pagination-page-active{
     font-family: 'ZonaProBold';
     font-size: 24px;
 }
 
-span#competence-pagination-total-pages{
+#competence-pagination-total-pages{
     font-family: 'ZonaProExtraLight';
     font-size: 16px;
     position: relative;
@@ -58,26 +58,26 @@ div#competence-pagination-gauche > img{
     opacity: .7;
 }
 
-div#competence-titre-container {
+#competence-titre-container {
     overflow-y: hidden;
     display: flex;
     align-items: center;
     margin-bottom: 30px;
 }
 
-div#competence-titre-container:hover>img {
+#competence-titre-container:hover>img {
     transition: all .3s ease-out;
     margin-left: 8px;
 }
 
-h3#competence-titre {
+#competence-titre {
     margin: 0;
     font-size: 30px;
     font-weight: bold;
     color: var(--primary-color);
 }
 
-img#competence-titre-fleche {
+#competence-titre-fleche {
     transition: all .3s ease-out;
     margin-left: 24px;
     margin-top: 8px;
@@ -85,7 +85,7 @@ img#competence-titre-fleche {
     height: 16px;
 }
 
-div#competence-carousel {
+#competence-carousel {
     display: flex;
     gap: 23px;
 }
