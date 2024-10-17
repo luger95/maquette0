@@ -1,10 +1,22 @@
 //<!-- ------------------------------------------------------>
 //<!-- ----------------- Slider missions -------------------->
 //<!------------------------------------------------------>
-
 let currentIndex = 1; 
 const maxIndex = 4; 
 const minIndex = 1; 
+
+
+ document.addEventListener("DOMContentLoaded", (event) => {
+   
+    const button1 = document.getElementById('prev');
+
+    const button2 = document.getElementById('next');
+
+    button1.addEventListener('click', decrementCounter );
+
+    button2.addEventListener('click',incrementCounter);
+  });
+
 
 
 
@@ -24,6 +36,7 @@ function updateMissionDisplay() {
         case 1:
             document.getElementById('mission-recrutement').style.display = 'block';
             document.getElementById('mission-recrutement-img').style.display = 'block';
+            
             break;
         case 2:
             document.getElementById('mission-interim').style.display = 'block';
@@ -40,8 +53,6 @@ function updateMissionDisplay() {
     }
 }
 
-
-
 function updateCounter(newValue) {
     const counterElement = document.getElementById('counter'); 
     
@@ -51,6 +62,8 @@ function updateCounter(newValue) {
         updateMissionDisplay(); 
     
 }
+
+
 
 function incrementCounter() { 
     if(currentIndex +1 > maxIndex){
