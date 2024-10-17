@@ -8,11 +8,11 @@
 }
 
 #competences h3 {
+    margin: 4rem 0 1rem 1rem;
+    font-size: 2em;
     grid-area: h3;
-    font-family: "Frontage Condensed";
-}
-
-.competences_slider_arrow{
+    font-family: 'FrontageCondensedOutline';
+    color: rgba(15, 47, 120, 1);
 }
 
 #competences_interactible {
@@ -20,9 +20,7 @@
     display: flex;
     flex-flow: row nowrap;
     justify-content: space-around;
-    position: relative;
-    top: 1.5rem;
-    left: 2.5rem;
+    margin: 1rem 0 auto 3rem;
 }
 
 #competences_interactible_arrows {
@@ -32,6 +30,9 @@
     height: min-content;
     display: flex;
     z-index: 1;
+    position: relative;
+    top: 1rem;
+    left: 1rem;
 }
 
 #competences button {
@@ -45,21 +46,31 @@
 
 #competences_slider {
     position: relative;
-    width: 100%;
     grid-area: slider;
     overflow: hidden;
     font-size: 0.9em;
     font-weight: bold;
     font-family: Arial;
     color: rgba(15, 47, 120, 1);
+    width: 100%;
+    height: 480px;
 }
 
 #competences_slides {
     display: flex;
     flex-flow: row nowrap;
-    justify-content: space-around;
-    width: 100%;
+    justify-content: space-between;
+    position: absolute;
+    transform: translateX(-0%);
+    transition: transform 1s;
     padding: 1rem;
+}
+
+#competences_slides > div {
+    margin-right: 1rem;
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-position: center;
 }
 
 .competences_image {
@@ -68,29 +79,28 @@
     border-radius: 0.5rem;
     padding: 1.5rem;
     display: flex;
-    vertical-align: bottom;
+    background-color: rgba(15, 47, 120, 0.5);
 }
 
 .competences_image p {
     margin-top: auto;
     margin-bottom: 0;
+    transition: margin-bottom 1s;
     color: white;
     font-size: 1.5em;
     height: min-content;
+    font-family: 'ZonaProBold';
 }
 
-#shutterstock_421594822, #shutterstock_421594822_ {
-    background-image: url("../img/shutterstock_421594822.png");
+#competences_index {
+    color: rgb(15, 47, 120);
+    font-family: 'Segoe UI Light';
 }
 
-#shutterstock_703607812 {
-    background-image: url("../img/shutterstock_703607812.png");
+#competences_index span {
+    font-size: 1.5em;
 }
 
-#shutterstock_1414838378 {
-    background-image: url("../img/shutterstock_1414838378.png");
-}
-
-#shutterstock_1727886613 {
-    background-image: url("../img/shutterstock_1727886613.png");
+.competences_images:hover p {
+    margin-bottom: 1rem;
 }

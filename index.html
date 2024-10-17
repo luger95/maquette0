@@ -7,7 +7,6 @@
     <link rel="stylesheet" href="assets/css/reset.css">
     <link rel="stylesheet" href="assets/css/globalStyle.css">
     <link rel="stylesheet" href="assets/css/sliderCompetencesStyle.css">
-    <script src=""></script>
     <meta name="description" content="">
 </head>
 <body>
@@ -130,48 +129,67 @@
     <!-- ------------------------------------------------------>
     <div id="competences">
         <div id="competences_interactible">
-            <p>01/05</p>
+            <p id="competences_index"></p>
             <div id="competences_interactible_arrows">
-                <button id="competences_left_arrow">←</button>
-                <button id="competences_right_arrow">→</button>
+                <button data-index-change="-1">←</button>
+                <button data-index-change="1">→</button>
             </div>
         </div>
         <h3>Booster vos compétences</h3>
         <div id="competences_slider">
             <div id="competences_slides">
                 <div>
-                    <div class="competences_image" id="shutterstock_421594822">
+                    <div class="competences_image" data-img-url="./assets/img/shutterstock_421594822.png">
                         <p>Lorem ipsum dolor sit amet</p>
                     </div>
                     <p>Evènement</p>
                 </div>
                 <div>
-                    <div class="competences_image" id="shutterstock_703607812">
+                    <div class="competences_image" data-img-url="./assets/img/shutterstock_703607812.png">
                         <p>Lorem ipsum dolor sit amet</p>
                     </div>
                     <p>Atelier</p>
                 </div>
                 <div>
-                    <div class="competences_image" id="shutterstock_1414838378">
+                    <div class="competences_image" data-img-url="./assets/img/shutterstock_1414838378.png">
                         <p>Lorem ipsum dolor sit amet</p>
                     </div>
                     <p>Atelier</p>
                 </div>
                 <div>
-                    <div class="competences_image" id="shutterstock_1727886613">
+                    <div class="competences_image" data-img-url="./assets/img/shutterstock_1727886613.png">
                         <p>Lorem ipsum dolor sit amet</p>
                     </div>
                     <p>Séminaire</p>
                 </div>
                 <div>
-                    <div class="competences_image" id="shutterstock_421594822_">
+                    <div class="competences_image" data-img-url="./assets/img/shutterstock_421594822.png">
                         <p>Lorem ipsum dolor sit amet</p>
                     </div>
                     <p>Evènement</p>
                 </div>
+                <div>
+                    <div class="competences_image" data-img-url="./assets/img/shutterstock_703607812.png">
+                        <p>Lorem ipsum dolor sit amet</p>
+                    </div>
+                    <p>Atelier</p>
+                </div>
+                <div>
+                    <div class="competences_image" data-img-url="./assets/img/shutterstock_1414838378.png">
+                        <p>Lorem ipsum dolor sit amet</p>
+                    </div>
+                    <p>Atelier</p>
+                </div>
+                <div>
+                    <div class="competences_image" data-img-url="./assets/img/shutterstock_1727886613.png">
+                        <p>Lorem ipsum dolor sit amet</p>
+                    </div>
+                    <p>Séminaire</p>
+                </div>
             </div>
         </div>
     </div>
+    <script src="./assets/js/sliderCompetences.js"></script>
     <!-- ------------------------------------------------------>
     <!-- -------------- END Slider compétences ---------------->
     <!-- ------------------------------------------------------>
