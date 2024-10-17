@@ -48,7 +48,11 @@ class Pagination{
         if(this.index === this.nbTotalPages){
             return;
         }
-        document.getElementById(`carousel-item-${this.index}`).style.display = "none";
+        if(this.index === this.nbTotalPages - 1){
+            document.getElementById('competence-pagination-right-arrow').classList.add('muted');
+        }
+        document.getElementById('competence-pagination-left-arrow').classList.remove('muted');
+        document.getElementById(`carousel-item-${this.index}`).style.display = 'none';
         this.index++;
         this.updateHTMLIndex();
     }
@@ -60,6 +64,10 @@ class Pagination{
         if(this.index === 1){
             return;
         }
+        if(this.index === 2){
+            document.getElementById('competence-pagination-left-arrow').classList.add('muted');
+        }
+        document.getElementById('competence-pagination-right-arrow').classList.remove('muted');
         document.getElementById(`carousel-item-${this.index-1}`).style.display = "";
         this.index--;
         this.updateHTMLIndex();
