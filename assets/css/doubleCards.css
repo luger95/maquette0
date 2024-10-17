@@ -3,34 +3,50 @@ h2{
     font-size: 2em;
 }
 
-.texteImageDoubleCards{
-    position: relative;
-    color: rgb(255, 0, 0);
-    font-size: 20px;
-    font-weight: bold;
-    right: 13%;
-}
-
-#flecheDoubleCards1{
-    transition: transform .1s;
-    opacity: 0;
-}
-
-#flecheDoubleCards1:hover{
-    transition: transform .1s;
-    opacity: 1;
-    #flecheDoubleCards1{
-        transition: transform .1s;
-        opacity: 0;
-    }
-}
-
 
 #containerDoubleCards{
     
     display: flex;
-    justify-content: center;
+    justify-content: space-evenly;
     align-items: flex-end;
+    outline: 3px solid;
+}
+
+.subContainerDoubleCards{
+    display: flex;
+    flex-direction: column;
+    outline: 3px solid;
+}
+
+.containerTexteImageDoubleCards{
+    position: absolute;
+    height: 256px;
+    display: flex;
+    flex-direction: column;
+    column-gap: 0;
+    align-items: flex-start;
+    justify-content: center;
+    outline: 3px solid;
+}
+
+.containerTexteImageDoubleCards:hover > .flecheDoubleCards1{
+    opacity: 1;
+    translate: 100px;
+}
+
+.texteImageDoubleCards{ 
+    color: rgb(255, 0, 0);
+    font-size: 20px;
+    font-weight: bold;
+    margin-top: 200px;
+    margin-bottom: 0;
+    
+}
+
+.flecheDoubleCards1{
+    transition: translate 0.5s, opacity 0.5s;
+    opacity: 0;
+    position: relative;
 }
 
 .zoom{
