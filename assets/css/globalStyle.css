@@ -36,16 +36,22 @@
     --grey-dark-color: rgba(90, 90, 90, 1);
     --grey-light-color: rgba(242, 244, 247, 1);
     --red-color: rgba(179, 67, 62, 1);
-    --blue-color: rgba(162, 182, 223, 1)
+    --blue-color: rgba(162, 182, 223, 1);
 }
 
 body {
     font-size: 16px;
+    margin: 0;
 }
 
 
 h2 {
     font-size: 2.5em;
+    font-family: 'ZonaProBold';
+}
+
+h3 {
+    font-size: 1.25em;
     font-family: 'ZonaProBold';
 }
 

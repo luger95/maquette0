@@ -1,0 +1,186 @@
+/* Section Title */
+
+#experts-titles {
+    text-align: center;
+    margin-bottom: 100px;
+}
+
+#experts-title {
+    color: var(--primary-color);
+    font-weight: 900;
+    margin-bottom: 10px;
+    font-size: 3.5em;
+    
+}
+
+#experts-keywords {
+    color: var(--blue-color);
+    font-size: 1.25em;
+    font-family: 'ZonaProBold';
+}
+
+/* Section Subtitles */
+
+#experts-subtitles {
+    margin-top: 2px;
+    margin-left: 10%;
+}
+
+#our-expertises {
+    color: var(--primary-color);
+    font-weight: 500;
+    margin-bottom: 20px;
+    font-size: 2em;
+    letter-spacing: 5px;
+}
+
+#expertise-list {
+    font-family: 'ZonaProExtraLight';
+    font-weight: 900;
+
+    margin-bottom: 100px;
+}
+
+/* Section Slider */
+.blue-square {
+    background-color: var(--blue-color);
+    width: 400px;
+    height: 500px;
+    display: block;
+    margin: 0;
+    position: absolute;
+}
+
+.expertise-slider {
+    display: flex;
+    flex-direction: row;
+}
+
+.expertise-features {
+    display: flex;
+    flex-direction: row-reverse;
+    height: max-content;
+    overflow: hidden;
+    position: relative;
+    
+    bottom: 30px;
+}
+
+.item-buttons-container {
+    display: flex;
+    flex-direction: row;
+    align-content: center;
+    column-gap: 20px;
+    height: 70px;
+    width: 240px;
+
+    position: absolute;
+    left: 1%;
+    top: 6%;
+}
+
+
+
+.expertise-items {
+    display: flex;
+    flex-direction: row;
+    column-gap: 50px;
+    
+    
+    position: relative;
+    right: -220px;
+
+    overflow: hidden;
+    
+    text-align: center;
+    height: 500px;
+}
+
+.expertise-item {
+    border: 10px var(--blue-color);
+    border-radius: 10px;
+    border-style: solid;
+    padding: 50px;
+    background-color: white;
+    min-width: 300px;
+    height: 350px;
+
+    position: relative;
+    left: -470px;
+
+    transition: left 1s cubic-bezier(0.075, 0.82, 0.165, 1);
+}
+
+
+.expertise-item-title {
+    font-size: x-large;
+    font-family: 'ZonaProBold';
+    color: var(--primary-color);
+}
+
+.expertise-item-content {
+    text-align: center;
+    font-size: large;
+    font-family: 'ZonaProExtraLight';
+    font-weight: 900;
+    color: var(--primary-color);
+}
+
+.item-buttons {
+    display: flex;
+    flex-direction: row;
+    font-weight: 900;
+    font-size: 30px;
+    font-family: 'ZonaProBold';
+    width: 140px;
+    height: 70px;
+    text-align: center;
+
+
+}
+
+.item-buttons .left {
+    margin: 0;
+    color: gray;
+    background-color: var(--primary-color);
+    width: 70px;
+}
+
+.item-buttons .left p {
+    margin: 0;
+    margin-top: 10px;
+}
+
+.item-buttons .right p {
+    margin: 0;
+    margin-top: 10px;
+}
+
+.item-buttons .left p:hover {
+    cursor: pointer;
+}
+
+.item-buttons .right p:hover {
+    cursor: pointer;
+}
+
+.item-buttons .right {
+    margin: 0;
+    color: white;
+    background-color: var(--primary-color);
+    width: 70px;
+}
+
+
+#item-index {
+    color: var(--primary-color);
+    font-weight: 500;
+    font-size: 2em;
+    margin-top: 10px;
+}
+
+
+
+.expertise-item:hover {
+    border-color: var(--primary-color);
+}
