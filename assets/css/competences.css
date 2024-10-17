@@ -6,6 +6,7 @@
     padding-left: 160px;
     padding-top: 134px;
     font-family: 'FrontageCondensedOutline';
+    overflow: hidden;
 }
 
 #competence-pagination{
