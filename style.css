@@ -112,6 +112,7 @@
     display: grid; 
     grid-template-columns: 180px auto;
     margin-right: 20px;
+    line-height: 20%;
     
 }
 
