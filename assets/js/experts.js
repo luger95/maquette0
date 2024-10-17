@@ -2,12 +2,11 @@
  * Initialisation
  */
 const PIXELPERSLIDE = -470;
-let slideNumber = 1
+var slideNumber = 1
 
-let numberOfSlides = document.getElementsByClassName("expertise-item").length;
-let itemIndex = document.getElementById("item-index")
-let expertiseRightArrow = document.getElementById("expertise-right-arrow");
-let expertiseLeftArrow = document.getElementById("expertise-left-arrow");
+var itemIndex = document.getElementById("item-index")
+var expertiseRightArrow = document.getElementById("expertise-right-arrow");
+var expertiseLeftArrow = document.getElementById("expertise-left-arrow");
 
 itemIndex.innerText = zerosBefore(slideNumber, 2) + "/" + zerosBefore((numberOfSlides - 3), 2)
 
@@ -31,6 +30,8 @@ function setSlidesLeftAttribute(slideNum) {
  * Définis la couleur des flèches selon la slide affichée.
  */
 function setArrowsColor() {
+    let numberOfSlides = document.getElementsByClassName("expertise-item").length;
+
     if(slideNumber === 1) {
         expertiseLeftArrow.style.color = "gray"; 
     } else {
@@ -65,6 +66,8 @@ function zerosBefore(num, size) {
  * Évènements
  */
 document.getElementById("left").addEventListener("click", () => {
+    let numberOfSlides = document.getElementsByClassName("expertise-item").length;
+
     if(slideNumber > 1) {
         slideNumber--;
 
@@ -74,6 +77,8 @@ document.getElementById("left").addEventListener("click", () => {
 })
 
 document.getElementById("right").addEventListener("click", () => {
+    let numberOfSlides = document.getElementsByClassName("expertise-item").length;
+
     if(slideNumber < numberOfSlides - 3) {
         slideNumber++;
 
