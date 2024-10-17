@@ -6,10 +6,13 @@
     <title>Maquette 0 - Version 0</title>
     <link rel="stylesheet" href="assets/css/reset.css">
     <link rel="stylesheet" href="assets/css/globalStyle.css">
+    <link rel="stylesheet" href="experts.css">
     <link rel="stylesheet" href="assets/css/competences.css">
     <script src="assets/js/competences/classes/pagination.js" defer></script>
     <script src="assets/js/competences/competences.js" defer></script>
     <meta name="description" content="">
+
+    <script defer src="./assets/js/experts.js"></script>
 </head>
 <body>
 <!--
@@ -98,7 +101,72 @@
     <!-- ------------------------------------------------------>
     <!-- ----------------- Slider experts --------------------->
     <!-- ------------------------------------------------------>
-    <div>
+    <div class="experts-container">
+        <div id="experts-titles">
+            <h2 id="experts-title">POURQUOI FAIRE ÉQUIPE <br> AVEC NOS CONSULTANTS ET COACHS ?</h2>
+            <p id="experts-keywords">PROXIMITÉ - PARTAGE - ENGAGEMENT - DÉPASSEMENT DE SOI - ÉLÉGANCE</p>
+        </div>
+
+        <div id="experts-subtitles">
+            <h3 id="our-expertises">NOS EXPERTISES SECTORIELLES</h3>
+            <p id="expertise-list">Finances, IT & OPS, Digital, Marketing & Ventes, RH, Achats logistique, Juridique & Fiscal.</p>
+        </div>
+
+        <div class="expertise-slider">
+            <div class="blue-square"></div>
+            
+            <div class="expertise-features">
+                <div class="expertise-items">
+                    <div class="expertise-item">
+                        <img src="assets/img/money-bag.svg" alt="Image de sac d'argent" width="150">
+                        <p class="expertise-item-title">SERVICES FINANCIERS</p>
+                        <p class="expertise-item-content">Assurance, <br>Fonds d'invest., <br>Banque</p>
+                    </div>
+                    <div class="expertise-item">
+                        <img src="assets/img/cart-check.svg" alt="Image de sac d'argent" width="150">
+                        <p class="expertise-item-title">DISTRIBUTION MÉDIAS</p>
+                        <p class="expertise-item-content">Grande distribution, <br>Distribution sélective, <br>E-Commerce</p>
+                    </div>
+                    <div class="expertise-item">
+                        <img src="assets/img/market.svg" alt="Image de marché" width="150">
+                        <p class="expertise-item-title">NON <br>MARCHAND</p>
+                        <p class="expertise-item-content">Associations, Paritarisme<br>Fondations, École, EPIC<br>Habitant Social</p>
+                    </div>
+                    <div class="expertise-item">
+                        <img src="assets/img/industry.svg" alt="Image d'usine" width="150">
+                        <p class="expertise-item-title">INDUSTRIE</p>
+                        <p class="expertise-item-content">Luxe<br>Énergie<br>Chimie</p>
+                    </div>
+                    <div class="expertise-item">
+                        <img src="assets/img/car.svg" alt="Image de voiture" width="150">
+                        <p class="expertise-item-title">AUTOMOBILE<br>TRANSPORT</p>
+                        <p class="expertise-item-content">Maritime<br>Aérien<br>Ferroviaire<br>Supply Chain</p>
+                    </div>
+                    <div class="expertise-item">
+                        <img src="assets/img/cogs.svg" alt="Image de rouages" width="150">
+                        <p class="expertise-item-title">SERVICES<br>BTOB</p>
+                        <p class="expertise-item-content">Audit, Conseil<br>Industrie du Service<br>Cabinets d'avocats</p>
+                    </div>
+                    <div class="expertise-item">
+                        <img src="assets/img/health.svg" alt="Image du symbole PLUS représentant la santé" width="150">
+                        <p class="expertise-item-title">SANTÉ</p>
+                        <p class="expertise-item-content">Équipement médical<br>Pharma<br>Biotech</p>
+                    </div>
+                    <div class="expertise-item">
+                        <img src="assets/img/immo.svg" alt="Image de maison" width="150">
+                        <p class="expertise-item-title">IMMOBILIER</p>
+                        <p class="expertise-item-content">Promotion immobilière<br>Construction<br>Infrastructure</p>
+                    </div>
+                </div>
+                <div class="item-buttons-container">
+                    <p id="item-index">01/08</p>
+                    <div class="item-buttons">
+                        <div class="left" id="left"><p id="expertise-left-arrow">←</p></div>
+                        <div class="right" id="right"><p id="expertise-right-arrow">→</p></div>
+                    </div>
+                </div>
+            </div>
+        </div>
     </div>
     <!-- ------------------------------------------------------>
     <!-- --------------- END Slider experts ------------------->
