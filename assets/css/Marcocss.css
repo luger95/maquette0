@@ -1,0 +1,69 @@
+#Partager {
+    position: fixed;
+    right: 0;
+    top: 50%;
+
+
+    width: 50px;
+    height: 50px;
+    background-color: white;
+    border: 5px solid black;
+    border-radius: 5px;
+
+    text-align: center;
+    transition: height 0.1s, background 0.1s;
+    z-index: 1000;
+}
+
+#twitterIcon {
+    display: none;
+    background-color: white;
+    opacity: 0;
+    width: 50px;
+    height: 50px;
+    transition: opacity 0.2s linear;
+}
+#facebookIcon{
+    display: none;
+    background-color: white;
+    opacity: 0;
+    width: 50px;
+    height: 50px;
+    transition: opacity 0.2s linear;
+}
+#linkedinIcon{
+    display: none;
+    background-color: white;
+    opacity: 0;
+    width: 50px;
+    height: 50px;
+    transition: opacity 0.2s linear;
+}
+#emailIcon{
+    display: none;
+    background-color: white;
+    opacity: 0;
+    width: 50px;
+    height: 50px;
+    transition: opacity 0.2s linear;
+}
+.OpenImg{
+    display : inline;
+    opacity : 1;
+}
+.CloseImg{
+    display : none;
+    opacity : 0;
+}
+
+#SharePopUp{
+    display : none;
+    position : fixed;
+    translate : -50%;
+
+    height: 50px;
+    left : 50%;
+    top : 0;
+    border : 5px solid black;
+    border-radius : 5px;
+}
