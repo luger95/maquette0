@@ -19,7 +19,7 @@ function setSlidesLeftAttribute(slideNum) {
 }
 
 function setArrowsColor() {
-    if(slideNumber == 1) expertiseLeftArrow.style.color = "gray"; 
+    if(slideNumber === 1) expertiseLeftArrow.style.color = "gray"; 
     else expertiseLeftArrow.style.color = "white";
     if(slideNumber == numberOfSlides - 3) expertiseRightArrow.style.color = "gray"; 
     else expertiseRightArrow.style.color = "white";
