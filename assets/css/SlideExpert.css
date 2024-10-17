@@ -15,19 +15,23 @@ ul{
 
 
 .expert-titre{
-text-align: center;
-font: normal normal normal 40px/40px ZonaPro-ExtraBold;
-letter-spacing: 0px;
-color: #0F2F78;
-text-transform: uppercase;
+    text-align: center;
+    font: 40px/40px heavy;
+    font-family: 'ZonaProBold';
+    color: #0F2F78;
+    width: 1000px;
+    height: 80px;
+    margin-left: auto;
+    margin-right: auto;
 }
 
 
 .expert-sous-titre{
     text-align: center;
-    font: normal normal normal 20px/63px FrontageCondensed-Bold;
+    font: normal normal normal 20px/63px;
+    font-family: 'FrontageCondensedOutline';
     color: #A2B6DF;
-    justify-content: space-between
+    fill: #A2B6DF;
 }
 
 .SlideExpert{
@@ -44,4 +48,23 @@ text-transform: uppercase;
     flex-direction: column;
     justify-content: center;
     align-items: center;
+}
+
+.nom_expertise{
+    width: 160px;
+    height: 42px;
+    text-align: center;
+    font: 20px/20px 'ZonaProBold';
+    letter-spacing: 0px;
+    color: #0F2F78;
+    margin-bottom: 0px;
+}
+
+.description_expertise{
+    width: 224px;
+    height: 62px;
+    text-align: center;
+    font:16px/20px ZonaPro;
+    color: #0F2F78;
+    margin-top: 7px;
 }
