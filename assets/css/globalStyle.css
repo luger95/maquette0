@@ -109,7 +109,7 @@ h2 {
 }
 
 #maj {
-    display: inline-block; /* Change à inline-block */
+    display: inline-block;
     box-shadow: inset 0 0 0 0 #A2B6DF;
     transition: color .3s ease-in-out, box-shadow .3s ease-in-out;
 }
@@ -119,17 +119,16 @@ h2 {
 }
 
 #imgLeft {
-    width: 294px; /* Taille de l'image */
+    width: 294px; 
     height: 318px;
-    margin-bottom: 20px; /* Ajoute un peu d'espace sous l'image */
+    margin-bottom: 20px; 
 }
 
-/*
-#imgLeft {
-    top: 5708px;
-    left: 63px;
-    width: 294px;
-    height: 318px;
+#tag {
+    text-align: left;
+    font: normal normal normal 20px/36px ZonaPro;
+    color: #0F2F78;
+    opacity: 1;
 }
 /* -----------------------------------------------------*/
 /* --------------- END Actualités ----------------------*/
