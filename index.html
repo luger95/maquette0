@@ -1,4 +1,4 @@
-<!doctype html>
+<!DOCTYPE HTML>
 <html lang="fr">
 <head>
     <meta charset="utf-8">
@@ -6,7 +6,7 @@
     <title>Maquette 0 - Version 0</title>
     <link rel="stylesheet" href="">
     <link rel="stylesheet" href="assets/css/reset.css">
-    <link rel="stylesheet" href="assets/css/Marco.css" media="all">
+    <link rel="stylesheet" href="assets/css/Marcocss.css" media="all">
     <meta name="description" content="">
 </head>
 <body>
@@ -173,15 +173,21 @@
 <!-- ---------------------------------------------------------->
 <!---------------------- Partager ----------------------->
 <!-- ---------------------------------------------------------->
-<link rel="stylesheet" href="assets/css/Marco.css" media="all">
-<div id="Partager"> <!-- onmouseover="partagerOpen()" -->
-  <p>test2</p>
-  <img src="assets/img/partager1.png"  alt="Partager!">
+
+<div id="Partager">
+    <img src="assets/img/partager1.png" width="50px" alt="partager">
+    <img id="twitterIcon" src="assets/img/partager2t.png" alt="Icone Twitter">
+    <img id="facebookIcon" src="assets/img/partager3f.jpeg" alt="Icone Facebook">
+    <img id="linkedinIcon" src="assets/img/partager4l.png" alt="Icone Linkedin">
+    <img id="emailIcon" src="assets/img/partager5e.jpg" alt="Icone Email">
 </div>
-<pre>
+<div id="SharePopUp">
+  <a id ="popUp"></a>
+  <br>
+  <button onclick="partagerPopUpClose()" type="button" name="button" style="position: absolute; right: 0; bottom: 0;">Share!</button>
+</div>
 
 
-</pre>
 <!-- ---------------------------------------------------------->
 <!---------------------- END Partager ----------------------->
 <!-- ---------------------------------------------------------->
@@ -189,4 +195,5 @@
 
 
 </body>
+<script src="assets/js/Marco.js"></script>
 </html>
