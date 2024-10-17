@@ -7,6 +7,9 @@
     <link rel="stylesheet" href="assets/css/reset.css">
     <link rel="stylesheet" href="assets/css/globalStyle.css">
     <link rel="stylesheet" href="experts.css">
+    <link rel="stylesheet" href="assets/css/competences.css">
+    <script src="assets/js/competences/classes/pagination.js" defer></script>
+    <script src="assets/js/competences/competences.js" defer></script>
     <meta name="description" content="">
 
     <script defer src="./assets/js/experts.js"></script>
@@ -194,7 +197,136 @@
     <!-- ------------------------------------------------------>
     <!-- ---------------- Slider compétences ------------------>
     <!-- ------------------------------------------------------>
-    <div></div>
+    <div id="competence-container">
+
+        <div id="competence-pagination">
+            <div id="competence-pagination-texte">
+                <span id="competence-pagination-page-active">01/</span>
+                <span id="competence-pagination-total-pages">00</span>
+            </div>
+
+            <div id="competence-pagination-gauche" class="competence-pagination-fleche">
+                <img src="./assets/img/Icon awesome-long-arrow-alt-right.svg" id="competence-pagination-left-arrow" alt="fleche pointant vers la gauche" class="muted">
+            </div>
+            <div id="competence-pagination-droite" class="competence-pagination-fleche">
+                <img src="./assets/img/Icon awesome-long-arrow-alt-right.svg" id="competence-pagination-right-arrow" alt="fleche pointant vers la droite">
+            </div>
+        </div>
+
+        <div id="competence-titre-container">
+            <h3 id="competence-titre">BOOSTER VOS COMPÉTENCES</h3>
+            <img id="competence-titre-fleche" src="./assets/img/Icon feather-arrow-right.svg" alt="flèche pointant vers la droite">
+        </div>
+
+        <div id="competence-carousel">
+
+            <div id="carousel-item-1" class="competence-carousel-item">
+                <div class="competence-carousel-item-image" style="background: url('./assets/img/shutterstock_421594822.png')">
+                    <div class="competence-carousel-item-fond-bleu"></div>
+                    <span class="competence-carousel-item-title">
+                        LOREM IPSUM IS SIMPLY DUMMY TEXT OF THE PRINTING
+                    </span>
+                    <img class="competence-carousel-item-fleche" src="./assets/img/Icon feather-arrow-right.svg" alt="flèche pointant vers la droite">
+                </div>
+                <span class="competence-carousel-item-subtitle">
+                    Evènement
+                </span>
+            </div>
+
+            <div id="carousel-item-2" class="competence-carousel-item">
+                <div class="competence-carousel-item-image" style="background: url('./assets/img/shutterstock_703607812.png')">
+                    <div class="competence-carousel-item-fond-bleu"></div>
+                    <span class="competence-carousel-item-title">
+                        LOREM IPSUM IS SIMPLY DUMMY TEXT OF THE PRINTING
+                    </span>
+                    <img class="competence-carousel-item-fleche" src="./assets/img/Icon feather-arrow-right.svg" alt="flèche pointant vers la droite">
+                </div>
+                <span class="competence-carousel-item-subtitle">
+                    Atelier
+                </span>
+            </div>
+
+            <div id="carousel-item-3" class="competence-carousel-item">
+                <div class="competence-carousel-item-image" style="background: url('./assets/img/shutterstock_1727886613.png')">
+                    <div class="competence-carousel-item-fond-bleu"></div>
+                    <span class="competence-carousel-item-title">
+                        LOREM IPSUM IS SIMPLY DUMMY TEXT OF THE PRINTING
+                    </span>
+                    <img class="competence-carousel-item-fleche" src="./assets/img/Icon feather-arrow-right.svg" alt="flèche pointant vers la droite">
+                </div>
+                <span class="competence-carousel-item-subtitle">
+                    Atelier
+                </span>
+            </div>
+
+            <div id="carousel-item-4" class="competence-carousel-item">
+                <div class="competence-carousel-item-image" style="background: url('./assets/img/shutterstock_1414838378.png')">
+                    <div class="competence-carousel-item-fond-bleu"></div>
+                    <span class="competence-carousel-item-title">
+                        LOREM IPSUM IS SIMPLY DUMMY TEXT OF THE PRINTING
+                    </span>
+                    <img class="competence-carousel-item-fleche" src="./assets/img/Icon feather-arrow-right.svg" alt="flèche pointant vers la droite">
+                </div>
+                <span class="competence-carousel-item-subtitle">
+                    Séminaire
+                </span>
+            </div>
+
+            <div id="carousel-item-5" class="competence-carousel-item">
+                <div class="competence-carousel-item-image" style="background: url('./assets/img/shutterstock_421594822.png')">
+                    <div class="competence-carousel-item-fond-bleu"></div>
+                    <span class="competence-carousel-item-title">
+                        LOREM IPSUM IS SIMPLY DUMMY TEXT OF THE PRINTING
+                    </span>
+                    <img class="competence-carousel-item-fleche" src="./assets/img/Icon feather-arrow-right.svg" alt="flèche pointant vers la droite">
+                </div>
+                <span class="competence-carousel-item-subtitle">
+                    Evènement
+                </span>
+            </div>
+
+            <div id="carousel-item-6" class="competence-carousel-item">
+                <div class="competence-carousel-item-image" style="background: url('./assets/img/shutterstock_703607812.png')">
+                    <div class="competence-carousel-item-fond-bleu"></div>
+                    <span class="competence-carousel-item-title">
+                        LOREM IPSUM IS SIMPLY DUMMY TEXT OF THE PRINTING
+                    </span>
+                    <img class="competence-carousel-item-fleche" src="./assets/img/Icon feather-arrow-right.svg" alt="flèche pointant vers la droite">
+                </div>
+                <span class="competence-carousel-item-subtitle">
+                    Atelier
+                </span>
+            </div>
+
+            <div id="carousel-item-7" class="competence-carousel-item">
+                <div class="competence-carousel-item-image" style="background: url('./assets/img/shutterstock_1727886613.png')">
+                    <div class="competence-carousel-item-fond-bleu"></div>
+                    <span class="competence-carousel-item-title">
+                        LOREM IPSUM IS SIMPLY DUMMY TEXT OF THE PRINTING
+                    </span>
+                    <img class="competence-carousel-item-fleche" src="./assets/img/Icon feather-arrow-right.svg" alt="flèche pointant vers la droite">
+                </div>
+                <span class="competence-carousel-item-subtitle">
+                    Atelier
+                </span>
+            </div>
+
+            <div id="carousel-item-8" class="competence-carousel-item">
+                <div class="competence-carousel-item-image" style="background: url('./assets/img/shutterstock_1414838378.png')">
+                    <div class="competence-carousel-item-fond-bleu"></div>
+                    <span class="competence-carousel-item-title">
+                        LOREM IPSUM IS SIMPLY DUMMY TEXT OF THE PRINTING
+                    </span>
+                    <img class="competence-carousel-item-fleche" src="./assets/img/Icon feather-arrow-right.svg" alt="flèche pointant vers la droite">
+                </div>
+                <span class="competence-carousel-item-subtitle">
+                    Séminaire
+                </span>
+            </div>
+            
+        </div>
+
+    </div>
     <!-- ------------------------------------------------------>
     <!-- -------------- END Slider compétences ---------------->
     <!-- ------------------------------------------------------>
