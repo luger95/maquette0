@@ -31,10 +31,17 @@ function setSlidesLeftAttribute(slideNum) {
  * Définis la couleur des flèches selon la slide affichée.
  */
 function setArrowsColor() {
-    if(slideNumber === 1) expertiseLeftArrow.style.color = "gray"; 
-    else expertiseLeftArrow.style.color = "white";
-    if(slideNumber == numberOfSlides - 3) expertiseRightArrow.style.color = "gray"; 
-    else expertiseRightArrow.style.color = "white";
+    if(slideNumber === 1) {
+        expertiseLeftArrow.style.color = "gray"; 
+    } else {
+        expertiseLeftArrow.style.color = "white";
+    }
+    
+    if(slideNumber == numberOfSlides - 3) {
+        expertiseRightArrow.style.color = "gray"; 
+    } else {
+        expertiseRightArrow.style.color = "white";
+    }
 }
 
 
