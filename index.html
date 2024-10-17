@@ -84,33 +84,54 @@
     <!-- ------------------------------------------------------>
     <!-- --------- double cards (différence) ------------------>
     <!-- ------------------------------------------------------>
-    <div id="partager">
-        <img id="imagePartage" src="assets\img\shutterstock_703607812@2x.png" alt="partager">
-    </div>
-    
-    <div class="container">
-        <table>
-            <thead>
-                <th colspan="2">
-                    <h2>LA DIFFERENCE QUI FERA<br>VOTRE DIFFERENCE</h2>
-                </th>
-            </thead>
-            <tr class="tableauImageJohannes">
-                <td>
-                    <div class="wrapper">
-                        <img src="assets\img\shutterstock_703607812@2x.png" alt="image 1" id="image">
-                    </div>
-                </td>
-                <td>
-                    <div class="wrapper">
-                        <img src="assets\img\shutterstock_703607812@2x.png" alt="image 1" id="image">
-                    </div>
-                </td>
-            </tr>
-        </table>
+    <svg>
+        <filter id="bleu">
+            <feColorMatrix
+              type="matrix"
+              values="1 0 0 0 0
+                      0 1 0 0 0
+                      0 0 1 0.1 0
+                      0 0 0 1 0" /> <!-- Matrice identité sauf pour le 0.1 qui applique mon filtre bleu-->
+          </filter>
+    </svg>
+
+    <div id="containerDoubleCards">
+
+        <div class="wrapperDoubleCards"> <!-- Pour les flèches qui bougent, il faudra insérer un png avec un transform translate et un transformation time-->
+            <img src="assets\img\doubleCards.png" class="zoom" id="imageGauche"> 
+            
+        </div>
+        <p class="texteImageDoubleCards">LOREM IPSUM DOLOR <br> <img src="assets\img\arrow-48.png" id="flecheDoubleCards1"></p>
+        
+        
+        
+        
+        <div class="wrapperDoubleCards">
+            <img src="assets\img\doubleCards.png" class="zoom">
+            
+        </div>
+        <p class="texteImageDoubleCards">LOREM IPSUM DOLOR <br> <img src="assets\img\arrow-48.png" id="flecheDoubleCards2"></p>
+        
+
     </div>
     <!-- ------------------------------------------------------>
     <!-- --------- END double cards (différence) -------------->
+    <!-- ------------------------------------------------------>
+
+    <!-- ------------------------------------------------------>
+    <!---------- Icone partager à droite de l'écran ----------->
+    <!-- ------------------------------------------------------>
+    <div>
+        <img src="assets\img\share.jpg" alt="partager" id="partage1">
+        <a href="https://instagram.com"><img src="assets\img\share.jpg" alt="partager" id="partage2"></a>
+        <a href="https://facebook.com"><img src="assets\img\share.jpg" alt="partager" id="partage3"></a>
+        <a href="https://twitter.com"><img src="assets\img\share.jpg" alt="partager" id="partage4"></a>
+    </div>
+
+    <script src="assets\js\doubleCards.js"></script>
+
+    <!-- ------------------------------------------------------>
+    <!-------- END Icone partager à droite de l'écran --------->
     <!-- ------------------------------------------------------>
 
 

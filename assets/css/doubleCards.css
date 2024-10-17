@@ -3,42 +3,84 @@ h2{
     font-size: 2em;
 }
 
-table{
-    width: 100%; 
-}
-
-th{
-    text-align: center;
-}
-
-
-td{
-    text-align: center;
-}
-
-.wrapper{
-    display: inline-block;
-    overflow: hidden;
-    align-items: center;
-}
-
-#imagePartage{
-    height: 50px;
-    width: 50px;
-    float:right;
-    position: fixed;
-}
-
-#image{
-    
-    display: block;
+.texteImageDoubleCards{
     position: relative;
-    width: 100%;
-    
+    color: rgb(255, 0, 0);
+    font-size: 20px;
+    font-weight: bold;
+    right: 13%;
 }
 
-#image:hover{
+#flecheDoubleCards1{
+    transition: transform .1s;
+    opacity: 0;
+}
+
+#flecheDoubleCards1:hover{
+    transition: transform .1s;
+    opacity: 1;
+    #flecheDoubleCards1{
+        transition: transform .1s;
+        opacity: 0;
+    }
+}
+
+
+#containerDoubleCards{
+    
+    display: flex;
+    justify-content: center;
+    align-items: flex-end;
+}
+
+.zoom{
+    transition: transform .2s;
+    filter: url(#bleu);
+}
+
+.zoom:hover{
     transform: scale(1.2);
-    transition: .1s ease;
-    filter: grayscale();
+    filter: hue-rotate(0deg);
+}
+
+.wrapperDoubleCards{
+    overflow: hidden;
+}
+
+/* A partir de là c'est pour le bouton des réseaux sociaux */
+
+#partage1{
+    position: fixed;
+    right: 1%;
+    bottom: 50%; 
+}
+
+#partage2{
+    position: fixed;
+    right: 1%;
+    bottom: calc(50% - 40px);
+    opacity: 0;
+    transition: opacity 0.25s;
+    height: 0;
+    width: 0;
+}
+
+#partage3{
+    position: fixed;
+    right: 1%;
+    bottom: calc(50% - 80px); 
+    opacity: 0;
+    transition: opacity 0.4s;
+    height: 0;
+    width: 0;
+}
+
+#partage4{
+    position: fixed;
+    right: 1%;
+    bottom: calc(50% - 120px); 
+    opacity: 0;
+    transition: opacity 0.55s;
+    height: 0;
+    width: 0;
 }
