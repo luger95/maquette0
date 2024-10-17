@@ -53,8 +53,11 @@ div.competence-pagination-fleche > img{
     height: 6.7px;
 }
 
-div#competence-pagination-gauche > img{
+#competence-pagination-gauche > img{
     rotate: 180deg;
+}
+
+.muted{
     opacity: .7;
 }
 
