@@ -75,6 +75,95 @@ h2 {
 /* ----------------- Actualités ------------------------*/
 /* -----------------------------------------------------*/
 
+
+
+#contenu_actualite {
+    display:flex;
+}
+
+#liste_actualite {
+    list-style-type: none;
+}
+
+#Tag_actualite {
+    display: flex;
+    align-items: center;
+    color: #003A80;
+    font-size: 1.5em;
+    font-family: 'Roboto', sans-serif;
+    margin-bottom: -0.5em;
+}
+
+#Tag_actualite::before {
+    content: '';
+    width: 1.5em; 
+    height: 0.05em;
+    background-color: #003A80;
+    margin-right: 0.75em; 
+}
+
+#Texte {
+    font-weight: bold;
+    font-size: 1.5em;
+    display: inline-block; 
+
+}
+
+#Texte:hover {
+    background-color:#A2B6DF;
+}
+
+#TitreActu {
+    margin-left: 7em;
+    margin-bottom: 3em;
+    font-size: 1.5em;
+    color: #003A80;
+}
+
+#actucolonnegauche {
+    margin-left: 4em;
+}
+
+#actucolonnedroite {
+    margin-left: 4em;
+    margin-top: -2.4em;
+}
+
+#DateActu1,#DateActu2,#DateActu3,#DateActu4{
+    margin-top: 1em;
+    margin-bottom: 1em;
+    font-size: 1em;
+}
+
+#DateActu2,#DateActu3{
+    border-bottom: 1px solid #888;
+    padding-bottom: 3em;
+}
+
+svg{
+    margin-left: 2em;
+}
+
+@keyframes mouvementFleche {
+    0% {
+        transform: translateX(0); 
+    }
+    50% {
+        transform: translateX(-1.5em); 
+    }
+    100% {
+        transform: translateX(0); 
+    }
+}
+
+svg:hover {
+    display: inline-block; 
+    animation: mouvementFleche 1s infinite; 
+}
+
+
+
+
 /* -----------------------------------------------------*/
 /* --------------- END Actualités ----------------------*/
 /* -----------------------------------------------------*/
