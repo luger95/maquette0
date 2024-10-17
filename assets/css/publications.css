@@ -1,0 +1,76 @@
+#titreNosP{
+    font-family: 'FrontageCondensedOutline';
+    color: rgba(162, 182, 223, 1); 
+    display: inline;
+    margin-left: 200px;
+    font-size: 30px;
+}
+
+#titreNosP:hover .arrow{
+    margin-left: 0px;
+}
+
+.Group{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+    margin-top: 15px;
+}
+.titreImage{
+    font-family: 'FrontageCondensedOutline';
+    color: white;
+    text-align: top;
+    position: absolute;
+    padding-left: 35px;
+    z-index: 100;
+}
+.txtImage{
+    font-family: 'ZonaProBold';
+    color: white;
+    position: absolute;
+    text-align: bottom;
+    margin-top: 380px;
+    padding-left: 35px;
+    z-index: 100;
+    transition: transform 0.4s ease-in-out;
+}
+.arrow{
+    margin-left: 15px;
+    margin-bottom: 15px;
+    display: inline;
+    transition: 0.4s ease-in-out;
+}
+.arrows{
+    opacity: 0;
+    transition: 0.4s ease-in-out;
+    margin-left: 130px;
+}
+.Image{
+    display: inline-flex;
+    width: 400px;
+    height: 500px;
+    overflow: hidden;
+    border-radius: 2%;
+}
+.PNG{
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    width: 800px;
+    border-radius: 2%;
+    transform-origin: 50% 50%;
+    transition: transform 0.4s ease-in-out;
+}
+.Image:hover .PNG{
+    object-fit: cover;
+    transform: scale(1.1);
+    transform-origin: 50% 50%;
+    z-index: 50;
+}
+.Image:hover .txtImage{
+    transform: translateY(-20px);
+}
+.Image:hover .arrows{
+    transform: translateX(30px) translateY(20px);
+    opacity: 1;
+}
