@@ -1,0 +1,70 @@
+@font-face {
+    font-family: 'ZonaPro-ExtraBold';
+    src: url(assets/fonts/zona-pro/ZonaProBold.woff2) format(woff2);
+}
+@font-face {
+    font-family: 'FrontageCondensed-Bold';
+    src: url(assets/fonts/frontage-condensed-outline/FrontageCondensedOutline.woff2) format(woff2);
+}
+
+ul{
+    list-style: none;
+    display: inline-flex;
+    overflow : visible;
+}
+
+
+.expert-titre{
+    text-align: center;
+    font: 40px/40px heavy;
+    font-family: 'ZonaProBold';
+    color: #0F2F78;
+    width: 1000px;
+    height: 80px;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+
+.expert-sous-titre{
+    text-align: center;
+    font: normal normal normal 20px/63px;
+    font-family: 'FrontageCondensedOutline';
+    color: #A2B6DF;
+    fill: #A2B6DF;
+}
+
+.SlideExpert{
+    background: #ffffff 0% 0% no-repeat padding-box;
+    border: 6px solid #A2B6DF;
+    border-radius: 4px;
+    opacity: 1;
+    width : 18.375em;
+    height: 19.875em;
+    background-size: auto;
+    background-repeat: no-repeat;
+    margin-left:23px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.nom_expertise{
+    width: 160px;
+    height: 42px;
+    text-align: center;
+    font: 20px/20px 'ZonaProBold';
+    letter-spacing: 0px;
+    color: #0F2F78;
+    margin-bottom: 0px;
+}
+
+.description_expertise{
+    width: 224px;
+    height: 62px;
+    text-align: center;
+    font:16px/20px ZonaPro;
+    color: #0F2F78;
+    margin-top: 7px;
+}
