@@ -15,6 +15,7 @@
     height: 56px;
     top: 213px;
     left: 0;
+    z-index: 90;
 }
 
 #competence-pagination-texte{
@@ -89,6 +90,8 @@ div.competence-pagination-fleche > img{
 }
 
 #competence-carousel {
+    transition: all .5s ease-in-out;
+    position: relative;
     display: flex;
     gap: 23px;
 }

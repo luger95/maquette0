@@ -10,11 +10,22 @@ class Pagination{
      * @param {Number} nbTotalPages Le nombre total de pages disponibles pour la pagination
      */
     constructor(nbTotalPages){
+
+        this.DEPLACEMENT_GAUCHE = 320;
+
         this.nbTotalPages = nbTotalPages;
         this.index = 1;
 
         this.updateHTMLTotalOfCards();
         this.addClickListeners();
+        this.setDefaultRight();
+    }
+
+    /**
+     * Définie une valeur à 0 pour la position droite du carousel.
+     */
+    setDefaultRight(){
+        document.getElementById('competence-carousel').style.right = "0px";
     }
 
     /**
@@ -52,7 +63,10 @@ class Pagination{
             document.getElementById('competence-pagination-right-arrow').classList.add('muted');
         }
         document.getElementById('competence-pagination-left-arrow').classList.remove('muted');
-        document.getElementById(`carousel-item-${this.index}`).style.display = 'none';
+
+        const currentRight = parseInt(document.getElementById('competence-carousel').style.right, 10);
+        document.getElementById('competence-carousel').style.right = `${(currentRight + this.DEPLACEMENT_GAUCHE)}px`;
+
         this.index++;
         this.updateHTMLIndex();
     }
@@ -68,7 +82,10 @@ class Pagination{
             document.getElementById('competence-pagination-left-arrow').classList.add('muted');
         }
         document.getElementById('competence-pagination-right-arrow').classList.remove('muted');
-        document.getElementById(`carousel-item-${this.index-1}`).style.display = "";
+
+        const currentRight = parseInt(document.getElementById('competence-carousel').style.right, 10);
+        document.getElementById('competence-carousel').style.right = `${(currentRight - this.DEPLACEMENT_GAUCHE)}px`;
+
         this.index--;
         this.updateHTMLIndex();
     }
