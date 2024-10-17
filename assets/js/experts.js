@@ -2,11 +2,13 @@
  * Initialisation
  */
 const PIXELPERSLIDE = -470;
-var slideNumber = 1
+let slideNumber = 1
 
-var itemIndex = document.getElementById("item-index")
-var expertiseRightArrow = document.getElementById("expertise-right-arrow");
-var expertiseLeftArrow = document.getElementById("expertise-left-arrow");
+const itemIndex = document.getElementById("item-index")
+const expertiseRightArrow = document.getElementById("expertise-right-arrow");
+const expertiseLeftArrow = document.getElementById("expertise-left-arrow");
+
+let numberOfSlides = document.getElementsByClassName("expertise-item").length;
 
 itemIndex.innerText = zerosBefore(slideNumber, 2) + "/" + zerosBefore((numberOfSlides - 3), 2)
 
