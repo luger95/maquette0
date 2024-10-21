@@ -1,0 +1,243 @@
+.TemoignageFormulaire{
+    display: flex;
+    flex-direction: row;
+    flex-wrap: nowrap;
+    position: relative;
+}
+
+#temoignage{
+    width: 50%;
+    left: 0px;
+    box-shadow: 0 4px 20px rgba(0, 0, 0, 0.1);
+    min-height: 100%;
+}
+
+#FormulaireRecherche{
+    background-color: navy;
+    width: 50%;
+    position: absolute;
+    right: 0px;
+    min-height: 100%;
+}
+
+#TitreFormulaire{
+    color:rgb(176, 198, 238);
+    margin-left: 50px;
+    font-family: Arial;
+    letter-spacing: 2px;
+}
+
+#formulaire{
+    display: flex;
+    flex-direction: column;
+}
+
+.critere{
+    background: none;
+    color: rgb(176, 198, 238);
+    border: none;
+    border-bottom: solid 1px rgb(176, 198, 238);
+    margin-top: 20px;
+    margin-bottom: 20px;
+    margin-right: 50px;
+    margin-left: 50px;
+    padding: 10px;
+    width: 60%;
+}
+
+#rechercher{
+    color: white;
+    background: none;
+    border: none;
+    font-weight: bold;
+    text-align: left;
+    margin-left: 50px;
+    margin-top: 20px;
+    margin-bottom: 20px;
+}
+
+
+.button-container{
+    gap: 10px;
+    margin-left: 150px;
+    margin-top: 20px;
+    margin-bottom: 20px;
+}
+.line {
+    display: inline-block;
+    width: 20px;
+    height: 5px;
+    background-color: #5e636b;
+    transition: all 0.3s ease-in-out; 
+    cursor: pointer; 
+    border-radius: 25px;
+    border: none;
+}
+
+
+.line:hover {
+    width: 50px;
+    height: 5px;
+    background-color: navy;
+}
+
+.line.active{
+    width: 50px;
+    height: 5px;
+    background-color: navy;
+}
+
+.avis{
+    display: none;
+    margin-left: 150px;
+}
+
+.avis.actif{
+    display: block;
+}
+
+/*.image-ronde { 
+    width: 150px; 
+    height: 150px;
+    border: none; 
+    border-radius: 75px; 
+    object-fit: cover; 
+}
+*/
+
+
+
+
+#container-photo {
+    position: relative;
+    display: grid; 
+    grid-template-columns: 180px auto;
+    margin-right: 20px;
+    line-height: 20%;
+    
+}
+
+#pp{
+    grid-row-start: 1;
+    grid-column-start: 1;
+    margin-right: 0px;
+}
+
+#client{
+    grid-row-start: 1;
+    grid-column-start: 2;
+    margin-left: 0px;
+}
+
+#titreAvis{
+    margin-left: 150px;
+    font-family: Arial;
+    letter-spacing: 2px;
+    color: navy;
+}
+
+#avis-text{
+    text-align: left;
+    max-width: 44%;
+
+}
+
+#NomClient{
+    font-weight: bold;
+    font-size: x-large;
+    color: navy;
+}
+
+#profession{
+    font-size: small;
+}
+
+#BARRE{
+    margin-left: 80px;
+}
+
+#titre-fleche{
+    position: relative;
+    display: grid; 
+    grid-template-columns: 500px auto;
+}
+
+
+
+.image-A{
+    width: 150px; 
+    height: 150px;
+    border: none; 
+    object-fit: cover; 
+    border-radius: 50%;
+    /*animation: image 2s infinite alternate;*/
+}
+.fleche{
+    width: 13px; 
+    height: 16px;
+    object-fit: initial;
+    margin-left: 20px; 
+}
+
+.fleche:hover{
+    width: 13px; 
+    height: 16px;
+    object-fit: initial;
+    animation: fleche 0.35s infinite alternate;
+
+}
+
+
+@keyframes image{
+
+      
+      0%  {
+        border-radius:10% 10% 10% 10%;
+      }
+      33%  {
+        border-radius:25% 25% 25% 25%;
+        
+      }
+      66%  { 
+        border-radius:40% 40% 40% 40%;
+      }
+      100% {  
+        border-radius:50%;
+      }
+    }
+    
+@keyframes fleche{
+    0%  {
+        margin-left: 20px;
+    }
+    10%{
+        margin-left: 19px;
+    }
+    20%{
+        margin-left: 18px;
+    }
+    30%{
+        margin-left: 17px;
+    }
+    40%{
+        margin-left: 16px;
+    }
+    50%{
+        margin-left: 15px;
+    }
+    60%{
+        margin-left: 14px;
+    }
+    70%{
+        margin-left: 13px;
+    }
+    80%{
+        margin-left: 12px;
+    }
+    90%{
+        margin-left: 11px;
+    }
+    100%{
+        margin-left: 10px;
+    }
+}
