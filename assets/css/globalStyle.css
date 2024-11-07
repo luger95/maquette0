@@ -75,18 +75,10 @@ h2 {
 /* ----------------- Actualités ------------------------*/
 /* -----------------------------------------------------*/
 
-.container {
+.flex-container {
     display: flex;
-    row-gap: 10px;
-    column-gap: 20px;
+    justify-content: space-around;
   }
-  
-body {
-    font-size: 16px;
-    margin: 0;
-    font-family: Arial, Helvetica, sans-serif;
-    background-color: black;
-}
   
  .actualite_left {
     height: 100%;
@@ -102,6 +94,13 @@ body {
     margin-left: 200px;
     padding-left: 20px;
   }
+
+  p.tag {
+    color: blue;
+    font-family:'ZonaProExtraLight';
+  }
+
+  
 
 /* -----------------------------------------------------*/
 /* --------------- END Actualités ----------------------*/
