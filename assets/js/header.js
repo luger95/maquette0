@@ -10,9 +10,15 @@ const searchForm = document.querySelector('#searchForm');
 const searchIcon = document.querySelector('#searchIcon');
 const searchBar = document.querySelector('#searchBar');
 
+// Constantes pour les titres de sous-section
+const recrutement = "Recrutement";
+const interim = "Interim";
+const performance = "Performance";
+const transformation = "Transformation";
+const aPropos = "A Propos";
+const ressource = "Ressources";
 
-
-// -----fonction générique pour basculer la visibilité----------//
+// Fonction pour basculer la visibilité d'un élément
 function toggleVisibility(element, state) {
     if (!state) {
         element.classList.add('show'); // Ajouter la classe show
@@ -22,9 +28,7 @@ function toggleVisibility(element, state) {
     return !state; // Renvoie l'inverse de l'état pour le prochain appel
 }
 
-
-
-// -----fonction pour soumettre la barre de recherche----------//
+// Fonction pour soumettre la barre de recherche
 function submitSearchBar(event) {
     event.preventDefault(); // Empêche le rechargement de la page
     const inputValue = searchBar.value; // Récupération du texte entré
@@ -32,10 +36,30 @@ function submitSearchBar(event) {
     visibleSearchBar = toggleVisibility(searchBar, visibleSearchBar); // Cache la barre après soumission
     searchBar.value = ""; // Réinitialise la barre
     
-    console.log(inputValue); // Affiche la valeur dans la console pour tester
+    console.log(inputValue); // Tester
 }
 
+// Gérer la visibilité de la barre de recherche avec l'icône
+searchIcon.addEventListener('click', function(event) {
+    event.stopPropagation(); // Empêche la propagation de l'événement pour éviter de cacher la barre immédiatement
+    visibleSearchBar = toggleVisibility(searchBar, visibleSearchBar);
+});
 
+// Soumission du formulaire de recherche
+searchForm.addEventListener('submit', submitSearchBar);
+
+// Cacher la barre de recherche si l'on clique en dehors
+document.addEventListener('click', function(event) {
+    // Vérifie si le clic est en dehors de la barre de recherche et de l'icône
+    if (!searchBar.contains(event.target) && !searchIcon.contains(event.target)) {
+        // Si la barre est visible, la cacher
+        if (visibleSearchBar) {
+            visibleSearchBar = toggleVisibility(searchBar, visibleSearchBar);
+        }
+    }
+});
+
+// Gestion des clics sur les éléments de la barre de navigation
 liElements.forEach((li, index) => {
     li.addEventListener('click', function() {
         if (activeLiIndex === index) {
@@ -56,11 +80,3 @@ liElements.forEach((li, index) => {
         }
     });
 });
-
-// Gérer la visibilité de la barre de recherche avec l'icône
-searchIcon.addEventListener('click', function() {
-    visibleSearchBar = toggleVisibility(searchBar, visibleSearchBar);
-});
-
-// Soumission du formulaire de recherche
-searchForm.addEventListener('submit', submitSearchBar);
