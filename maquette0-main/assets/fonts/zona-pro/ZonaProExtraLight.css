@@ -1,9 +1,0 @@
-@font-face {
-    font-family: 'ZonaProExtraLight';
-    src: url('fonts/ZonaProExtraLight.eot');
-    src: url('fonts/ZonaProExtraLight.eot') format('embedded-opentype'),
-         url('fonts/ZonaProExtraLight.woff2') format('woff2'),
-         url('fonts/ZonaProExtraLight.woff') format('woff'),
-         url('fonts/ZonaProExtraLight.ttf') format('truetype'),
-         url('fonts/ZonaProExtraLight.svg#ZonaProExtraLight') format('svg');
-}
