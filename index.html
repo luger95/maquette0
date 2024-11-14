@@ -5,7 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <title>Maquette 0 - Version 0</title>
     <link rel="stylesheet" href="">
-    <link rel="stylesheet" href="assets/css/reset.css">
+    <link rel="stylesheet" href="assets/css/globalStyle.css">
     <meta name="description" content="">
 </head>
 <body>
@@ -40,23 +40,104 @@
 <!-- ------------------------------------------------------>
 <!-- ------------------ HEADER ---------------------------->
 <!-- ------------------------------------------------------>
-<header>
-    <div>
-        <p>Le logo</p>
+
+
+<!--problèmes a resoudres :
+-questionnement pour la suite lors de la synchroisation de l'image de font du slider 1
+-L'image de fond n'est pas la même que celle de la Maquette
+ -->
+
+<header class="banniere container">
+    <div class="box-header">
+      <div>
+
         <nav>
-            <a href="">Item 1</a>
-            <a href="">Item 2</a>
+            <p class="uppercase">logo</p>
+            <a href="" class="uppercase">recrutement</a>
+            <a href="" class="uppercase">intérim</a>
+            <a href="" class="uppercase">performance</a>
+            <a href="" class="uppercase">transformation</a>
+            <a href="#popup1" class="uppercase" >a propos</a>
+            <a href="" class="uppercase">ressources</a>
         </nav>
-        <div>
-            <p>Rechercher</p>
-        </div>
-    </div>
-    <div>
-        <nav>
+
+
+      </div>
+
+
+      <div >
+
+
+        <nav class="white-box">
+            <a id="triangle-topright"></a>
+
             <a href="">Espace canditat</a>
             <a href="">Aide & contact</a>
-        </nav>
+            <a href="" id="triangle-down"></a>
+            <a href=""><img src="assets/img/Groupe 14.svg" alt="icone du drapeau francais"> </a>
+
+          </nav>
+
+          <a href="" class="uppercase up-size1 right-align"> Rechercher</a>
     </div>
+    </div>
+
+    <div class="lightbox" id="popup1">
+      <figure>
+        <a href="#" class="closemsg"></a>
+      <figcaption>
+        <div class="box-header2">
+          <div>
+            <h2 class="big darkBlue">A PROPOS</h2>
+
+            <p>Lorem ipsum dolor sit amet, consectetur
+              adipiscing elit. Donec felis enim,
+            placerat id eleifend eu, semper vel sem.
+            Sed interdum commodo enim venenatis pulvinar.
+            Proin mattis lorem vitae diam scelerisque hendrerit.
+            Fusce cursus imperdiet mauris, vitae
+            hendrerit velit dignissim a.</p>
+          </div>
+          <div>
+            <ol class="bold">
+              <li>Athlète thinking</li>
+              <br>
+              <li>Histoire</li>
+              <br>
+              <li>Présentation</li>
+              <br>
+              <li>Equipe</li>
+              <br>
+              <li>Intersearch</li>
+              <br>
+              <li>Démarche RSE</li>
+              <br>
+              <li>Nous rejoindre</li>
+            </ol>
+
+          </div>
+
+          <div class="ligne-gauche">
+            <ol>
+            <li class="big darkBlue">A LA UNE</li>
+            <li class="big darkBlue"><HR ALIGN=CENTER WIDTH="50">Nomination</li>
+            <p>Grant Alexander
+              nomme Bruno Fadda
+              au poste de Directeur des
+              opérations au sein de
+              l'activité Executive Search</p>
+            </ol>
+          </div>
+
+        </div>
+
+      </figcaption>
+      </figure>
+      </div>
+
+
+
+
 </header>
 <!-- ------------------------------------------------------>
 <!-- ------------------ END HEADER ------------------------>
