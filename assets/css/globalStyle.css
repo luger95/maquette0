@@ -61,6 +61,149 @@ h2 {
     max-width: 1246px;
 }
 
+.grodiv ul li h3{
+    font-family: 'ZonaProBold';
+    text-transform: uppercase;
+    color: rgba(15, 47, 120, 1);
+    font-size: 0.8rem;
+    font-weight: bold;
+}
+
+.grodiv ul li{
+    border: solid 4px rgba(15, 47, 120, 0.4);
+    width: fit-content;
+    margin: 5px;
+    list-style-type: none;
+    padding: 30px 60px;
+    background-color: white;
+    width: 90px;
+    transition: 0.35s;
+    
+}
+
+.grodiv ul li:hover{
+    border: solid 4px rgba(15, 47, 120, 1);
+    .maisonicon {
+        margin: 7px 10px;
+        transition: 0.2s;
+    }
+    .tititre{
+        margin: 10.8px 0px;
+        transition: 0.2s;
+    }
+    .para{
+        margin: 6px 0px;
+        transition:0.2s;
+    }
+    .tkt{
+        opacity: 1;
+        transition: 0.3s;
+    }
+}
+
+.maisonicon{
+    width: 50px;
+    margin: 10px;
+}
+
+.grodiv ul li p{
+    font-size: 0.5rem;
+    font-weight: bold;
+    font-family: 'ZonaProExtraLight';
+    color: rgba(15, 47, 120, 1);
+}
+
+
+.grodiv ul{
+    text-align: center;
+    display: flex;
+    float: left;
+    position: relative;
+    left: 0px;
+    flex-direction: row;
+    transition: 0.5s;
+}
+
+.grodiv{
+    display: flex;
+    transition: 1s;
+    
+}
+
+.tregrodiv {
+    margin-left: 10%;
+    max-width: 100%;
+    overflow: hidden;
+}
+
+.tregrodiv p {
+    font-family: 'ZonaProExtraLight';
+    font-weight: bold;
+    font-size: 0.8rem;
+
+}
+
+.tregrodiv h2{
+    font-family: 'ZonaProBold';
+    font-size: 2rem;
+    color: rgba(15, 47, 120, 1);
+}
+
+.boutons button{
+    background-color: rgba(15, 47, 120, 1);
+    padding: 10px;
+    margin: 0;
+    border: none;
+    z-index: 3;
+    cursor: pointer;
+}
+
+
+.titefleche{
+    rotate: 180deg;
+}
+
+.boutons p{
+    color: rgba(15, 47, 120, 1);
+    font-weight: 2000;
+    margin: 20px;
+    font-size: 0.8rem;
+    z-index: 3;
+}
+
+.boutons{
+    display: flex;
+    flex-direction: row;
+    position: absolute;
+    left: 0;
+}
+
+.tirectangle{
+    position: absolute;
+    left: 0;
+    width: 300px;
+    height: 300px;
+    background-color: rgb(132, 148, 185);
+    z-index: -2;
+    top: 282px;
+}
+
+#plustirectangle {
+    width: 0;
+    z-index: 2;
+}
+
+#gauche {
+    opacity: 0.5;
+}
+
+.tkt{
+    opacity: 0;
+}
+
+
+
+
 /* -----------------------------------------------------*/
 /* ------------------ HEADER ---------------------------*/
 /* -----------------------------------------------------*/
