@@ -41,6 +41,7 @@
 
 body {
     font-size: 16px;
+ 
 }
 
 
@@ -93,14 +94,29 @@ h2 {
     width: 100%;
     overflow: hidden;
     position: relative;
-}   
+}
+
+.imgcontainer:hover {
+    .fleche {
+        opacity: 1;
+        left: 310px;
+        transition: 0.9s ease;
+    }
+
+    .imgtext1 .photo:hover, .imgtext2 .photo {
+
+        filter: none;
+        transform: scale(1.2);
+    }
+
+}
 
 .difference h2 {
     text-align: center;
     color: navy;
 }
 
-.difference img {
+.imgtext1 .photo, .imgtext2 .photo {
     width: 100%;
     height: 100%;
     position: relative;
@@ -110,14 +126,11 @@ h2 {
     filter: brightness(0.5) contrast(1.2);
     transition: filter 0.5s ease, transform 1s ease; 
     transform: scale(1);
+   
 }
 
-.difference img:hover {
-    filter: none;
-    transform: scale(1.2);
-}
 
-.difference p {
+.difference .titre {
     font-size: 30px;
     color: white;
     letter-spacing: 5px;
@@ -126,30 +139,66 @@ h2 {
     font-stretch: 50%; 
 }
 
+.difference .legendes {
+    font-family: 'ZonaProExtraLight';
+    font-size: 20px;
+    color: white;
+    font-weight: bold;
+}
+
 
 .imgtext1 img {
     position: relative;
 }
 
-.imgtext1 p {
+.imgtext1 .titre {
     position: absolute;
     top: 70%;
     right: 17%;
     z-index: 2;
 }
 
+.imgtext1 .fleche {
+    position: absolute;
+    bottom: 7%;
+    left: 250px;
+    z-index: 2;
+    opacity: 0;
+}
+
 .imgtext2 img {
     position: relative;
 }
 
-.imgtext2 p {
+.imgtext2 .titre {
     position: absolute;
     top: 70%;
     left: 17%;
     z-index: 2;
 }
 
+.imgtext2 .fleche {
+    position: absolute;
+    bottom: 7%;
+    left: 250px;
+    z-index: 2;
+    opacity: 0;
+}
 
+.imgtext1 .legendes {
+    position: absolute;
+    bottom: 7%;
+    right: 39%;
+    z-index: 2;
+}
+
+.imgtext2 .legendes {
+    position: absolute;
+    bottom: 7%;
+    right: 37%;
+    z-index: 2;
+
+}
 
 /* -----------------------------------------------------*/
 /* ------------------ HEADER ---------------------------*/
