@@ -74,18 +74,20 @@
 }
 
 .competences_image {
+    display: flex;
     width: 14rem;
     height: 16rem;
     border-radius: 0.5rem;
     padding: 1.5rem;
-    display: flex;
-    background-color: rgba(15, 47, 120, 0.5);
+    background-color: transparent;
+    background-blend-mode: overlay;
+    transition: background-color 0.5s;
 }
 
 .competences_image p {
     margin-top: auto;
     margin-bottom: 0;
-    transition: margin-bottom 1s;
+    transition: margin-bottom 0.5s;
     color: white;
     font-size: 1.5em;
     height: min-content;
@@ -101,6 +103,26 @@
     font-size: 1.5em;
 }
 
-.competences_images:hover p {
+.competences_image:hover {
+    background-color: rgba(15, 47, 120, 0.5);
+    transition: background-color 0.5s;
+}
+
+.competences_image:hover p {
     margin-bottom: 1rem;
+}
+
+.competences_image p:after {
+    position: relative;
+    top: 1.5rem;
+    left: 0;
+    content:"⇾";
+    color: white;
+    opacity: 0;
+    transition: opacity 0.5s;
+}
+
+.competences_image:hover p:after {
+    opacity: 1;
+    transition: opacity 0.5s;
 }

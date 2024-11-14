@@ -13,7 +13,7 @@ let competencesIndex = 0;
 function slide(nextIndex) {
     if (nextIndex < 0) nextIndex = 0;
     if (nextIndex >= imgs.length) nextIndex = imgs.length-1;
-    slider.style.transform = `translateX(-${(nextIndex/imgs.length)*100}%)`;
+    slider.style.transform = `translateX(-${(nextIndex/imgs.length)*99}%)`;
     competencesIndex = nextIndex;
     indexCompetences.innerHTML = `<span>0${competencesIndex+1}/</span>0${imgs.length}`; 
 }
