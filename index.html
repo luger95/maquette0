@@ -6,6 +6,7 @@
     <title>Maquette 0 - Version 0</title>
     <link rel="stylesheet" href="">
     <link rel="stylesheet" href="assets/css/reset.css">
+    <link rel="stylesheet" href="assets/css/globalStyle.css">
     <meta name="description" content="">
 </head>
 <body>
@@ -90,8 +91,31 @@
     <!-- ------------------------------------------------------>
     <!-- --------- END double cards (différence) -------------->
     <!-- ------------------------------------------------------>
+    <div class="tregrodiv">
+        <h2>Nos expertises sectorielles</h2>
+        <p>Finance, IT & OPS, Digital, Marketing & Ventes, RH, Achats logistique, Juridique & Fiscal.</p>
+        <div class="boutons">
+            <p id="chiffre">01/08</p>
+            <button onclick="moveLeft()"><img id="gauche" class="titefleche" src="angle-right.svg" alt=""></button>
+            <button onclick="moveRight()"><img id="droite"  src="angle-right.svg" alt=""></button>
+        </div>
+        <div id="groscontenai" class="grodiv">
+            <ul class="list" id="listid">
+                <li id="carre1"><img class="maisonicon" src="assets/img/groupe 49.svg" alt=""> <h3 class="tititre">Services financiers</h3> <p class="para">Assurance, Fonds d'Invest, Banque</p><img class="tkt"  src="fleche-droite.svg" alt=""></li>
+                <li id="carre2"><img class="maisonicon" src="assets/img/groupe 51.svg" alt=""> <h3 class="tititre">Distributon medias</h3><p class="para">Assurance, Fonds d'Invest, Banque</p><img class="tkt"  src="fleche-droite.svg" alt=""></li>
+                <li id="carre3"><img class="maisonicon" src="assets/img/groupe 55.svg" alt=""> <h3 class="tititre">non marchand</h3><p class="para">Assurance, Fonds d'Invest, Banque</p><img class="tkt"  src="fleche-droite.svg" alt=""></li>
+                <li id="carre4"><img class="maisonicon" src="assets/img/groupe 57.svg" alt=""> <h3 class="tititre">industrie</h3><p class="para">Assurance, Fonds d'Invest, Banque</p><img class="tkt"  src="fleche-droite.svg" alt=""></li>
+                <li id="carre5"><img class="maisonicon" src="assets/img/groupe 59.svg" alt=""> <h3 class="tititre">automobile transport</h3><p class="para">Assurance, Fonds d'Invest, Banque</p><img class="tkt"  src="fleche-droite.svg" alt=""></li>
+                <li id="carre6"><img class="maisonicon" src="assets/img/groupe 42.svg" alt=""> <h3 class="tititre">service btob</h3><p class="para">Assurance, Fonds d'Invest, Banque</p><img class="tkt"  src="fleche-droite.svg" alt=""></li>
+                <li id="carre7"><img class="maisonicon" src="assets/img/groupe 42.svg" alt=""> <h3 class="tititre">santé</h3><p class="para">Assurance, Fonds d'Invest, Banque</p><img class="tkt"  src="fleche-droite.svg" alt=""></li>
+                <li id="carre8"><img class="maisonicon" src="assets/img/groupe 47.svg" alt=""> <h3 class="tititre">immobilier</h3><p class="para">Assurance, Fonds d'Invest, Banque</p><img class="tkt"  src="fleche-droite.svg" alt=""></li>
+            </ul>
+        </div>
+        <div class="tirectangle"></div>
+        
 
-
+    </div>
+    
     <!-- ------------------------------------------------------>
     <!-- ----------------- Slider experts --------------------->
     <!-- ------------------------------------------------------>
@@ -169,6 +193,6 @@
 
 
 
-
+<script src="assets/js/global.js"></script>
 </body>
 </html>
