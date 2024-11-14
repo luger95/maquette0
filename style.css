@@ -167,7 +167,7 @@ option{
 #titre-fleche{
     position: relative;
     display: grid; 
-    grid-template-columns: 500px auto;
+    grid-template-columns: 470px auto;
 }
 
 
@@ -188,12 +188,8 @@ option{
     margin-left: 20px; 
 }
 
-.fleche:hover{
-    width: 13px; 
-    height: 16px;
-    object-fit: initial;
+#container-fleche:hover{
     animation: fleche 0.35s infinite alternate;
-
 }
 
 
