@@ -36,13 +36,20 @@
     background: none;
     color: rgb(176, 198, 238);
     border: none;
-    border-bottom: solid 1px rgb(176, 198, 238);
+    border-bottom: solid 2px rgb(176, 198, 238);
     margin-top: 20px;
     margin-bottom: 20px;
     margin-right: 50px;
     margin-left: 50px;
     padding: 10px;
     width: 60%;
+    font-family:sans-serif;
+    letter-spacing: 0.5px;
+    font-size: medium;
+}
+
+option{
+    background-color:rgb(26, 26, 158);
 }
 
 #rechercher{
@@ -54,6 +61,7 @@
     margin-left: 50px;
     margin-top: 20px;
     margin-bottom: 20px;
+    font-family: sans-serif;
 }
 
 
@@ -172,6 +180,7 @@
     border-radius: 50%;
     /*animation: image 2s infinite alternate;*/
 }
+
 .fleche{
     width: 13px; 
     height: 16px;
