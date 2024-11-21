@@ -25,6 +25,17 @@
     url('../fonts/zona-pro/ZonaProExtraLight.ttf') format('truetype'),
     url('../fonts/zona-pro/ZonaProExtraLight.svg#ZonaProExtraLight') format('svg');
 }
+@font-face {
+    font-family: 'ZonaPro-ExtraBold';
+    src: url('../fonts/zona-pro/ZonaPro-ExtraBold.eot');
+    src: url('../fonts/zona-pro/ZonaPro-ExtraBold.eot') format('embedded-opentype'),
+    url('../fonts/zona-pro/ZonaPro-ExtraBold.woff2') format('woff2'),
+    url('../fonts/zona-pro/ZonaPro-ExtraBold.woff') format('woff'),
+    url('../fonts/zona-pro/ZonaPro-ExtraBold.ttf') format('truetype'),
+    url('../fonts/zona-pro/ZonaPro-ExtraBold.svg#ZonaPro-ExtraBold') format('svg');
+    }
+
+
 
 
 :root {
@@ -39,6 +50,9 @@
     --blue-color: rgba(162, 182, 223, 1)
 }
 
+html {
+    overflow-x: hidden;
+}
 
 body {
     font-size: 16px;
@@ -92,6 +106,63 @@ h2 {
 .container {
     padding-top: 20px;
     max-width: 750px;
+}
+
+.difference {
+    margin:80px;
+    text-align: center;
+    font:normal normal normal 40px/40px "ZonaPro-ExtraBold";
+    color: #0F2F78;
+}
+
+.phimeth {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+#heidegger {
+    background: transparent url('../img/heidegger.png') 0% 0% no-repeat padding-box;
+    width: 610px;
+    height: 485px;
+    color:red;
+}
+
+#methodo {
+    background: transparent url('../img/habitants-methodologie.jpeg') 0% 0% no-repeat padding-box;
+    width: 610px;
+    height: 485px;
+    color: red;
+}
+
+#center-op {
+    font:normal normal normal 20px/63px "ZonaPro-ExtraBold";
+    text-align: center;
+    color:#A2B6DF;
+}
+
+.gogo {
+    text-align: center;
+    font:normal normal normal 40px/40px "ZonaPro-ExtraBold";
+    color: #0F2F78;
+}
+
+#thin-text {
+    text-align: center;
+    font: normal normal normal 30px/63px 'ZonaPro-ExtraBold';
+    margin-top:300px;
+}
+
+.blue-text {
+    font: normal normal normal 30px/63px 'ZonaPro-ExtraBold';
+    color: #0F2F78;
+}
+
+
+#thin-text2 {
+    text-align: center;
+    font: normal normal normal 30px/63px 'ZonaPro-ExtraBold';
+    color:white;
 }
 
 /* -----------------------------------------------------*/
