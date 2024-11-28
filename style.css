@@ -27,7 +27,6 @@ img.visible, h1.visible{
 }
 
 
-
 #home-slider{
     position: relative;
 }
@@ -37,6 +36,7 @@ li#slide1{
 .titreimg{
     position: absolute;
     opacity: 0;
+
     font-size: 70px;
     top: 35%;
     left: 80px;
@@ -45,7 +45,6 @@ li#slide1{
 }
 #titre{
     display: block;
-    
 }
 
 
@@ -54,7 +53,6 @@ li#slide1{
     user-select: none;
     position: absolute;
     transition: backgroundColor 4s ease;
-    
 }
 #nav{   
     bottom: 0;
