@@ -1,9 +1,9 @@
 //<!-- ------------------------------------------------------>
 //<!-- ----------------- Slider missions -------------------->
 //<!------------------------------------------------------>
-let currentIndex = 1; 
-const maxIndex = 4; 
-const minIndex = 1; 
+let currentIndex_Mission = 1; 
+const maxIndex_Mission = 4; 
+const minIndex_Mission = 1; 
 
 
  document.addEventListener("DOMContentLoaded", (event) => {
@@ -31,7 +31,7 @@ function updateMissionDisplay() {
     document.getElementById('mission-performance-img').style.display = 'none';
     document.getElementById('transformation-img').style.display = 'none';
 
-    switch(currentIndex) {
+    switch(currentIndex_Mission) {
     
         case 1:
             document.getElementById('mission-recrutement').style.display = 'block';
@@ -50,6 +50,10 @@ function updateMissionDisplay() {
             document.getElementById('transformation').style.display = 'block';
             document.getElementById('transformation-img').style.display = 'block';
             break;
+
+        default: 
+            document.getElementById('mission-recrutement').style.display = 'block';
+            document.getElementById('mission-recrutement-img').style.display = 'block';
     }
 }
 
@@ -57,8 +61,8 @@ function updateCounter(newValue) {
     const counterElement = document.getElementById('counter'); 
     
 
-        currentIndex = newValue;
-        counterElement.textContent = currentIndex;
+        currentIndex_Mission = newValue;
+        counterElement.textContent = currentIndex_Mission;
         updateMissionDisplay(); 
     
 }
@@ -66,19 +70,19 @@ function updateCounter(newValue) {
 
 
 function incrementCounter() { 
-    if(currentIndex +1 > maxIndex){
+    if(currentIndex_Mission +1 > maxIndex_Mission){
         updateCounter(1);
     }
-    else{updateCounter(currentIndex + 1);}
+    else{updateCounter(currentIndex_Mission + 1);}
    
 }
 
 function decrementCounter() {
-    if(currentIndex -1 < minIndex){
+    if(currentIndex_Mission -1 < minIndex_Mission){
         updateCounter(4) ;
     }
     else{
-        updateCounter(currentIndex - 1);
+        updateCounter(currentIndex_Mission - 1);
     }
     
 }

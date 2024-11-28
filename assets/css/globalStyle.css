@@ -106,23 +106,26 @@ h2 {
     display: flex;
     justify-content: space-between; 
     align-items: flex-start;
-  }
+}
   
-  #bloc-gauche {
+  
+#bloc-gauche {
     flex: 1; 
     margin-right: 20px; 
-  }
+}
   
-  #bloc-droit {
+#bloc-droit {
     flex: 2; 
     margin-top: 50px;
     margin-left: -150px;
-  }
+}
 
-  #img-mission {
+#img-mission {
     border-radius: 5px;
     max-width: 90%; 
 }
+
+
 
 .titre-mission{
     color: #A2B6DF;
