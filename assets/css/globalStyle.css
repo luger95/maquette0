@@ -81,11 +81,11 @@ h2 {
     display: flex;
 }
 
-#liste_actualite1, #liste_actualite2, #liste_actualite3, #liste_actualite4 {
+.liste_actualite {
     list-style-type: none;
 }
 
-#Tag_actualite1, #Tag_actualite2, #Tag_actualite3, #Tag_actualite4 {
+.Tag_actualite {
     display: flex;
     align-items: center;
     color: #000000;
@@ -94,7 +94,7 @@ h2 {
     margin-bottom: 0.4em;
 }
 
-#Tag_actualite1::before, #Tag_actualite2::before, #Tag_actualite3::before, #Tag_actualite4::before {
+.Tag_actualite::before {
     content: '';
     width: 1.5em;
     height: 0.05em;
@@ -102,7 +102,7 @@ h2 {
     margin-right: 0.75em;
 }
 
-#Texte1, #Texte2, #Texte3, #Texte4 {
+.Texte {
     font-weight: bold;
     font-size: 1.5em;
     display: inline-block;
@@ -111,7 +111,7 @@ h2 {
     color: #000000; 
 }
 
-#Texte1::before, #Texte2::before, #Texte3::before, #Texte4::before {
+.Texte::before {
     content: "";
     position: absolute;
     bottom: 0;
@@ -124,7 +124,7 @@ h2 {
     transition-delay: 0.3s;
 }
 
-#Texte1:hover::before, #Texte2:hover::before, #Texte3:hover::before, #Texte4:hover::before {
+.Texte:hover::before {
     width: 100%;
 }
 
@@ -143,44 +143,40 @@ h2 {
     margin-left: 4em;
 }
 
-#DateActu1, #DateActu2, #DateActu3, #DateActu4 {
+.DateActu {
     margin-top: 1em;
     margin-bottom: 1em;
     font-size: 1em;
 }
 
-#DateActu2, #DateActu3 {
+#DateActuSpecial1, #DateActuSpecial2 {
     border-bottom: 1px solid #888;
     padding-bottom: 3em;
 }
 
-svg {
-    margin-left: 2em;
-    animation-play-state: initial;
+.arrow-container {
+    display: inline-block;
+    cursor: pointer;
 }
 
-@keyframes mouvementFleche {
+.arrow {
+    margin-left: 2em;
+    font-size: 2rem;
+    color: #003580;
+    position: relative;
+    animation: none;
+    transition: transform 0.3s ease;
+    font-size: 0.8em;
+}
+
+@keyframes MouvementFleche {
     0% {
         transform: translateX(0);
     }
-    50% {
+    100% {
         transform: translateX(-1.5em);
     }
-    100% {
-        transform: translateX(0);
-    }
 }
-
-svg:hover {
-    display: inline-block;
-    animation: mouvementFleche 1s infinite;
-}
-
-
-
-
-
-
 
 /* -----------------------------------------------------*/
 /* --------------- END Actualités ----------------------*/
