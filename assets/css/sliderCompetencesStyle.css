@@ -1,0 +1,149 @@
+#competences {
+    width: 100%;
+    display: grid;
+    grid-template-columns: 8rem auto;
+    grid-template-areas: ". title" "buttons slider";
+    margin: 0;
+    background-color: rgb(242,244,247);
+}
+
+#competences_title {
+    margin: 4rem 0 1rem 1rem;
+    font-size: 2em;
+    grid-area: title;
+    font-family: 'FrontageCondensedOutline';
+    color: rgba(15, 47, 120, 1);
+    display: flex;
+    cursor: pointer;
+}
+
+#competences_title img {
+    width: 0.5em;
+    height: 0.5em;
+    position: relative;
+    top: 4rem;
+    left: 3rem;
+    transition: left 0.5s;
+}
+
+#competences_title:hover img {
+    left : 1rem;
+    transition: left 0.5s;
+}
+
+#competences_interactible {
+    grid-area: buttons;
+    display: flex;
+    flex-flow: row nowrap;
+    justify-content: space-around;
+    margin: 1rem 0 auto 3rem;
+}
+
+#competences_interactible_arrows {
+    background-color: rgba(15, 47, 120, 1);
+    padding: 0.7rem 0.5rem;
+    width: min-content;
+    height: min-content;
+    display: flex;
+    z-index: 1;
+    position: relative;
+    top: 1rem;
+    left: 1rem;
+}
+
+#competences button {
+    border: none;
+    background-color: transparent;
+    color: white;
+    margin: auto 0.3rem;
+    padding: 0;
+    font-size: 0.7em;
+}
+
+#competences_slider {
+    position: relative;
+    grid-area: slider;
+    overflow: hidden;
+    font-size: 0.9em;
+    font-weight: bold;
+    font-family: Arial;
+    color: rgba(15, 47, 120, 1);
+    width: 100%;
+    height: 480px;
+}
+
+#competences_slides {
+    display: flex;
+    flex-flow: row nowrap;
+    justify-content: space-between;
+    position: absolute;
+    transform: translateX(-0%);
+    transition: transform 1s;
+    padding: 1rem;
+}
+
+#competences_slides > div {
+    margin-right: 1rem;
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-position: center;
+}
+
+.competences_image {
+    display: flex;
+    width: 14rem;
+    height: 16rem;
+    border-radius: 0.5rem;
+    padding: 1.5rem;
+    background-color: transparent;
+    background-blend-mode: overlay;
+    transition: background-color 0.5s;
+}
+
+.competences_image p {
+    margin-top: auto;
+    margin-bottom: 0;
+    transition: margin-bottom 0.5s;
+    color: white;
+    font-size: 1.5em;
+    height: min-content;
+    font-family: 'ZonaProBold';
+}
+
+#competences_index {
+    color: rgb(15, 47, 120);
+    font-family: 'Segoe UI Light';
+}
+
+#competences_index span {
+    font-size: 1.5em;
+}
+
+.competences_image:hover {
+    background-color: rgba(15, 47, 120, 0.5);
+    transition: background-color 0.5s;
+}
+
+.competences_image:hover p {
+    margin-bottom: 1rem;
+}
+
+.competences_image p:after {
+    display: inline-block;
+    position: relative;
+    top: 2rem;
+    left: -1rem;
+    width: 1em;
+    height: 1em;
+    content:"";
+    background: url("../img/Icon feather-arrow-right-white.svg") 0 0 no-repeat;
+    color: white;
+    opacity: 0;
+    transition: all 0.5s;
+}
+
+.competences_image:hover p:after {
+    opacity: 1;
+    left: 0.5rem;
+    transition: all 0.5s;
+}
