@@ -26,6 +26,10 @@
     url('../fonts/zona-pro/ZonaProExtraLight.svg#ZonaProExtraLight') format('svg');
 }
 
+@font-face {
+    font-family: 'ZonaPro-ExtraBold';
+    src: url('../fonts/zona-pro/ZonaPro-ExtraBold.woff2') format(woff2);
+}
 
 :root {
     --primary-color: rgba(15, 47, 120, 1);
