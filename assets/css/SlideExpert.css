@@ -1,14 +1,20 @@
 
-ul{
-    list-style: none;
-    display: inline-flex;
-    overflow : visible;
+#slider_expert{
+    width: 100%;
+    overflow-x: hidden;
+    display: flex;
+    scroll-behavior: smooth;
+}
+
+.ul{
+    display: flex;
+    list-style-type:none;
 }
 
 
 #expert-titre{
     text-align: center;
-    font: 40px/40px heavy;
+    font: normal normal normal 40px/40px ZonaPro-ExtraBold;
     font-weight: bold;
     font-family: 'ZonaPro-ExtraBold';
     color: #0F2F78;
@@ -16,6 +22,9 @@ ul{
     height: 80px;
     margin-left: auto;
     margin-right: auto;
+    text-align: center;
+    letter-spacing: 0px;
+    text-transform: uppercase;
 }
 
 
@@ -41,6 +50,7 @@ ul{
     flex-direction: column;
     justify-content: center;
     align-items: center;
+    text-align: center;
 }
 
 .nom_expertise{
@@ -62,9 +72,49 @@ ul{
     margin-top: 7px;
 }
 
+#preliste{
+    color: #0F2F78;
+}
+
 #liste-expert {
     font-family: 'ZonaProExtraLight';
     font-weight: 900;
-
     margin-bottom: 100px;
+}
+
+    .padding{
+    padding-left:162px;
+}
+
+.padding2{
+    padding-left:139px;
+}
+
+#Grid{
+    display:grid;
+    grid-template-rows: 1606px 1822px 1935px;
+}
+
+#Grid>div{
+    
+}
+
+#bouton{
+    position: relative;
+    z-index:10;
+    padding-left:97px;
+    padding-right: 1173px;
+    
+}
+
+#gauche{
+    width: 48px;
+    height:56px;
+    text-align: center;
+}
+
+#droite{
+    width: 48px;
+    height:56px;
+    text-align: center;
 }
