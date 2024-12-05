@@ -1,7 +1,12 @@
 const indexCompetences = document.getElementById('competences_index');
 const slider = document.querySelector('#competences_slides');
-const arrowButtons = document.querySelectorAll('[data-index-change]');
+const arrowButtons = document.querySelectorAll('#competences_interactible_arrows button');
+const imgs = document.querySelectorAll('.competences_image[img-url]');
 let competencesIndex = 0;
+
+imgs.forEach(img => {
+    img.style.backgroundImage = `url(\'${img.getAttribute('img-url')}\')`;
+});
 
 function slide(nextIndex) {
     if (nextIndex < 0) nextIndex = 0;
@@ -13,7 +18,7 @@ function slide(nextIndex) {
 
 arrowButtons.forEach((button) => {
     button.addEventListener('click', () => {
-        const indexChange = +button.getAttribute('data-index-change');
+        const indexChange =+ button.getAttribute('index-change');
         slide(competencesIndex + indexChange);
     });
 });
