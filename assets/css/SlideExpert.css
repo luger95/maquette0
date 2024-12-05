@@ -82,7 +82,21 @@
     margin-bottom: 100px;
 }
 
-    .padding{
+h4{
+    font: normal normal normal 20px/20px ZonaPro-ExtraBold;
+    color: #0F2F78;
+}
+
+.desc-expert{
+    text-align: center;
+    font-family: 'ZonaProExtraLight';
+    font: normal normal normal 16px/20px ;
+    letter-spacing: 0px;
+    color: #0F2F78;
+    opacity: 1;
+}
+
+.padding{
     padding-left:162px;
 }
 
