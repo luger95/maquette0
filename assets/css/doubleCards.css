@@ -1,9 +1,3 @@
-h2{
-    color: rgb(0, 0, 158);
-    font-size: 2em;
-}
-
-
 #containerDoubleCards{
     
     display: flex;
@@ -23,11 +17,6 @@ h2{
 .wrapperDoubleCards{
     overflow: hidden;
     outline:  15px solid;
-}
-
-.wrapperDoubleCards:hover ~ .containerTexteImageDoubleCards > .flecheDoubleCards1{
-    opacity: 1;
-    translate: 100px;
 }
 
 .containerTexteImageDoubleCards{
@@ -84,6 +73,26 @@ h2{
 
 /* A partir de là c'est pour le bouton des réseaux sociaux */
 
+#icones:hover .partage{
+    pointer-events: auto;
+    opacity: 1;
+}
+
+#icones:hover #partage2{
+    transition: opacity 0.25s;
+}
+
+#icones:hover #partage4{
+    transition: opacity 0.75s;
+}
+
+.partage{
+    height: 40px;
+    width: 40px;
+    pointer-events: none;
+    opacity: 0;
+}
+
 #partage1{
     position: fixed;
     right: 1%;
@@ -94,28 +103,19 @@ h2{
     position: fixed;
     right: 1%;
     bottom: calc(50% - 40px);
-    opacity: 0;
-    transition: opacity 0.25s;
-    height: 0;
-    width: 0;
+    transition: opacity 0.75s;
 }
 
 #partage3{
     position: fixed;
     right: 1%;
     bottom: calc(50% - 80px); 
-    opacity: 0;
-    transition: opacity 0.4s;
-    height: 0;
-    width: 0;
+    transition: opacity 0.5s;
 }
 
 #partage4{
     position: fixed;
     right: 1%;
     bottom: calc(50% - 120px); 
-    opacity: 0;
-    transition: opacity 0.55s;
-    height: 0;
-    width: 0;
+    transition: opacity 0.25s;
 }
