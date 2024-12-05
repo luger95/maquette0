@@ -2,17 +2,33 @@
     width: 100%;
     display: grid;
     grid-template-columns: 8rem auto;
-    grid-template-areas: ". h3" "buttons slider";
+    grid-template-areas: ". title" "buttons slider";
     margin: 0;
     background-color: rgb(242,244,247);
 }
 
-#competences h3 {
+#competences_title {
     margin: 4rem 0 1rem 1rem;
     font-size: 2em;
-    grid-area: h3;
+    grid-area: title;
     font-family: 'FrontageCondensedOutline';
     color: rgba(15, 47, 120, 1);
+    display: flex;
+    cursor: pointer;
+}
+
+#competences_title img {
+    width: 0.5em;
+    height: 0.5em;
+    position: relative;
+    top: 4rem;
+    left: 3rem;
+    transition: left 0.5s;
+}
+
+#competences_title:hover img {
+    left : 1rem;
+    transition: left 0.5s;
 }
 
 #competences_interactible {
