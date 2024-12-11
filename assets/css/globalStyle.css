@@ -81,6 +81,109 @@ h3 {
 /* ----------------- Actualités ------------------------*/
 /* -----------------------------------------------------*/
 
+
+
+#contenu_actualite {
+    display: flex;
+}
+
+.liste_actualite {
+    list-style-type: none;
+}
+
+.Tag_actualite {
+    display: flex;
+    align-items: center;
+    color: #000000;
+    font-size: 1.5em;
+    font-family: 'Roboto', sans-serif;
+    margin-bottom: 0.4em;
+}
+
+.Tag_actualite::before {
+    content: '';
+    width: 1.5em;
+    height: 0.05em;
+    background-color: #000000;
+    margin-right: 0.75em;
+}
+
+.Texte {
+    font-weight: bold;
+    font-size: 1.5em;
+    display: inline-block;
+    position: relative; 
+    padding-bottom: 5px; 
+    color: #000000; 
+}
+
+.Texte::before {
+    content: "";
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 0%; 
+    height: 100%;
+    background-color: #A2B6DF;
+    z-index: -1;
+    transition: width 0.3s ease-out; 
+    transition-delay: 0.3s;
+}
+
+.Texte:hover::before {
+    width: 100%;
+}
+
+#TitreActu {
+    margin-left: 7em;
+    margin-bottom: 3em;
+    font-size: 1.5em;
+    color: #003A80;
+}
+
+#actucolonnegauche {
+    margin-left: 4em;
+}
+
+#actucolonnedroite {
+    margin-left: 4em;
+}
+
+.DateActu {
+    margin-top: 1em;
+    margin-bottom: 1em;
+    font-size: 1em;
+}
+
+#DateActuSpecial1, #DateActuSpecial2 {
+    border-bottom: 1px solid #888;
+    padding-bottom: 3em;
+}
+
+.arrow-container {
+    display: inline-block;
+    cursor: pointer;
+}
+
+.arrow {
+    margin-left: 2em;
+    font-size: 2rem;
+    color: #003580;
+    position: relative;
+    animation: none;
+    transition: transform 0.3s ease;
+    font-size: 0.8em;
+}
+
+@keyframes MouvementFleche {
+    0% {
+        transform: translateX(0);
+    }
+    100% {
+        transform: translateX(-1.5em);
+    }
+}
+
 /* -----------------------------------------------------*/
 /* --------------- END Actualités ----------------------*/
 /* -----------------------------------------------------*/
